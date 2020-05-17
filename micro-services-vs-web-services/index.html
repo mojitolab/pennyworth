@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en-US">
+
+<!-- Mirrored from www.imensosoftware.com/micro-services-vs-web-services/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Apr 2020 21:36:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://www.imensosoftware.com/wp-content/themes/imenso/images/favicon.png">
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Micro Services Vs Web Services - Imenso Software</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v13.0 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://www.imensosoftware.com/micro-services-vs-web-services/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Micro Services Vs Web Services - Imenso Software" />
+<meta property="og:description" content="There are two different architectures for app development, respectively as Micro Services and Web Services. While both of them have some distinct advantages, it is important to know their differences in detail. Let us define, provide details and explain the pros and cons of both of these app development architectures. What is Web Service? Web &hellip;" />
+<meta property="og:url" content="https://www.imensosoftware.com/micro-services-vs-web-services/" />
+<meta property="og:site_name" content="Imenso Software" />
+<meta property="article:section" content="Development" />
+<meta property="article:published_time" content="2018-08-14T09:00:31+00:00" />
+<meta property="article:modified_time" content="2019-06-27T09:19:33+00:00" />
+<meta property="og:updated_time" content="2019-06-27T09:19:33+00:00" />
+<meta property="og:image" content="https://www.imensosoftware.com/wp-content/uploads/2018/08/micro-vs-web-services-1.jpg" />
+<meta property="og:image:secure_url" content="https://www.imensosoftware.com/wp-content/uploads/2018/08/micro-vs-web-services-1.jpg" />
+<meta property="og:image:width" content="824" />
+<meta property="og:image:height" content="400" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="There are two different architectures for app development, respectively as Micro Services and Web Services. While both of them have some distinct advantages, it is important to know their differences in detail. Let us define, provide details and explain the pros and cons of both of these app development architectures. What is Web Service? Web [&hellip;]" />
+<meta name="twitter:title" content="Micro Services Vs Web Services - Imenso Software" />
+<meta name="twitter:image" content="https://www.imensosoftware.com/wp-content/uploads/2018/08/micro-vs-web-services-1.jpg" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.imensosoftware.com/#website","url":"https://www.imensosoftware.com/","name":"Imenso Software","description":"Offshore Software Development Company - India","potentialAction":{"@type":"SearchAction","target":"https://www.imensosoftware.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://www.imensosoftware.com/micro-services-vs-web-services/#primaryimage","url":"https://www.imensosoftware.com/wp-content/uploads/2018/08/micro-vs-web-services-1.jpg","width":824,"height":400},{"@type":"WebPage","@id":"https://www.imensosoftware.com/micro-services-vs-web-services/#webpage","url":"https://www.imensosoftware.com/micro-services-vs-web-services/","inLanguage":"en-US","name":"Micro Services Vs Web Services - Imenso Software","isPartOf":{"@id":"https://www.imensosoftware.com/#website"},"primaryImageOfPage":{"@id":"https://www.imensosoftware.com/micro-services-vs-web-services/#primaryimage"},"datePublished":"2018-08-14T09:00:31+00:00","dateModified":"2019-06-27T09:19:33+00:00","author":{"@id":"https://www.imensosoftware.com/#/schema/person/ec6af7689324e676f4238f4d0f89b104"}},{"@type":["Person"],"@id":"https://www.imensosoftware.com/#/schema/person/ec6af7689324e676f4238f4d0f89b104","name":"jimmysir","image":{"@type":"ImageObject","@id":"https://www.imensosoftware.com/#authorlogo","url":"https://secure.gravatar.com/avatar/413782b4d7d62e43957cdde3d14610a3?s=96&d=mm&r=g","caption":"jimmysir"},"sameAs":[]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='http://sharecdn.social9.com/' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://maxcdn.bootstrapcdn.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Imenso Software &raquo; Feed" href="https://www.imensosoftware.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Imenso Software &raquo; Comments Feed" href="https://www.imensosoftware.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Imenso Software &raquo; Micro Services Vs Web Services Comments Feed" href="https://www.imensosoftware.com/micro-services-vs-web-services/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.imensosoftware.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.5"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='oss-social-sharing-front-css'  href='https://www.imensosoftware.com/wp-content/plugins/simplified-social-share/oss-social-sharing/assets/css/oss-social-sharing-front.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='oss-share-widget-style-css'  href='https://sharecdn.social9.com/v2/css/os-share-widget-style.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.imensosoftware.com/wp-includes/css/dist/block-library/style.min.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.imensosoftware.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.3' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600%2C700%2C800%2C900%7CWork+Sans%3A400%2C500%2C600%2C700%2C800&amp;ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='imenso-style-css'  href='https://www.imensosoftware.com/wp-content/themes/imenso/style.css?ver=5.2.5' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.imensosoftware.com/wp-content/themes/imenso/js/dist/scripts.min.js?ver=1'></script>
+<link rel='https://api.w.org/' href='https://www.imensosoftware.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.imensosoftware.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.imensosoftware.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2.5" />
+<link rel='shortlink' href='https://www.imensosoftware.com/?p=1937' />
+<link rel="alternate" type="application/json+oembed" href="https://www.imensosoftware.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.imensosoftware.com%2Fmicro-services-vs-web-services%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.imensosoftware.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.imensosoftware.com%2Fmicro-services-vs-web-services%2F&amp;format=xml" />
+<link rel="pingback" href="https://www.imensosoftware.com/xmlrpc.php">		<style type="text/css" id="wp-custom-css">
+			@media only screen and (max-width: 600px) {
+	.powerbi-banner::after {
+		background:transparent !important;
+	}
+}
+		</style>
+		 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39939999-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-39939999-1');
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-669852394"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-669852394');
+</script>
+<script type='application/ld+json'> 
+
+{
+
+  "@context": "http://www.schema.org",
+
+  "@type": "ProfessionalService",
+
+  "name": "Imenso Software",
+
+  "url": "https://www.imensosoftware.com/",
+
+  "sameAs": [
+
+    "https://in.linkedin.com/company/imenso-software",
+
+    "https://www.facebook.com/imensosoftware/",
+
+    "https://twitter.com/imensosoftware"
+
+  ],
+
+  "logo": "https://www.imensosoftware.com/wp-content/themes/imenso/images/ps-trans-logo.png",
+
+  "image": "https://www.imensosoftware.com/wp-content/themes/imenso/images/ps-trans-logo.png",
+
+  "description": "Imenso Software is a client focused offshore software development company in India. Whether you need custom web development or an appealing website design or mobile application development or game development, Imenso has the required expertise and experience to do it all.",
+
+  "address": {
+
+    "@type": "PostalAddress",
+
+    "streetAddress": "04A-04B, Ground Floor, Tower B4 Spaze i-Tech Park, Sohna Road",
+
+    "addressLocality": "Gurugram",
+
+    "addressRegion": "Haryana",
+
+    "postalCode": "122002",
+
+    "addressCountry": "India"
+
+  },
+
+  "telephone" : "+91 124 429 5523",
+
+  "priceRange": "$$",
+
+  "geo": {
+
+    "@type": "GeoCoordinates",
+
+    "latitude": "28.413093",
+
+    "longitude": "77.0418813"
+
+  },
+
+  "hasMap": "https://www.google.com/maps/place/Imenso+Software/@28.413093,77.0418813,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xc28729d9c21e4e3d!8m2!3d28.413093!4d77.04407",
+
+  "openingHours": "Mo, Tu, We, Th, Fr 09:30-20:30",
+
+  "contactPoint": {
+
+    "@type": "ContactPoint",
+
+    "contactType": "customer support",
+
+    "telephone": "+91 124 429 5523"
+
+  },
+
+  "aggregateRating" : {
+
+    "@type": "AggregateRating",
+
+    "worstRating" : "1",
+
+    "bestRating" : "5",
+
+    "ratingValue" : "4.5",
+
+    "ratingCount" : "13"
+
+  }
+
+}
+
+ </script>
+<meta name="google-site-verification" content="b_MuBKM-mEKzWd5RX8-OQURAJT7zgLBo54WFD1qMYBw" />
+</head>
+<body class="post-template-default single single-post postid-1937 single-format-standard">
+  <!-- <nav role="navigation" class="navbar " id="myNavbar"> -->
+  <nav class="navbar" id="myNavbar">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="ps-header-wrapr container ">
+      <div class="navbar-header ">
+        <button data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle" type="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar top"></span>
+          <span class="icon-bar mid"></span>
+          <span class="icon-bar btm"></span>
+        </button>
+        <a href="https://www.imensosoftware.com/" class="ps-logo"><img src="https://www.imensosoftware.com/wp-content/themes/imenso/images/ps-trans-logo.png" class="img-responsive"  alt="logo"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right" id="nav_bar">       
+          <li class="dropdown mega-dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Capabilities <i class="fa fa-angle-down"></i></a>
+            <!--mega menu -->                    
+            <div class="dropdown-menu mega-dropdown-menu">     
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <a href="https://www.imensosoftware.com/services/web-development/" class="main-service theme-clr">Web</a>
+                    <ul class="sub-service">
+                      <li><a href="https://www.imensosoftware.com/technologies/php-application-development/">PHP Development</a></li>
+                      <li><a href="https://www.imensosoftware.com/technologies/dot-net-development/">.NET Development</a></li>
+                      <li><a href="https://www.imensosoftware.com/technologies/laravel-development/">Laravel Development</a></li>
+                      <li><a href="https://www.imensosoftware.com/technologies/mean-stack-development/">MEAN Stack Development</a></li>
+                      <li><a href="https://www.imensosoftware.com/technologies/ecommerce-solutions/">E-Commerce Solutions</a></li>
+                      <li><a href="https://www.imensosoftware.com/technologies/cms-development/">CMS Development</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-3">
+                    <a href="https://www.imensosoftware.com/services/mobile-apps/" class="main-service theme-clr">Mobile</a>
+                    <ul class="sub-service">
+                      <li><a href="https://www.imensosoftware.com/technologies/ios-development/">IOS Development</a></li>
+                      <li><a href="https://www.imensosoftware.com/technologies/android-development/">Android Development</a></li>
+                      <li><a href="https://www.imensosoftware.com/technologies/react-native/">React Native</a></li>
+                      <li><a href="https://www.imensosoftware.com/technologies/phonegap-development/">Phonegap Development</a></li>                      
+                    </ul>
+                  </div>
+                  <div class="col-sm-3">
+                    <div>
+                      <a href="https://www.imensosoftware.com/services/game-development/" class="main-service theme-clr">Game</a>
+                      <ul class="sub-service">
+                        <li><a href="https://www.imensosoftware.com/technologies/html5-development/">HTML5 Development</a></li>
+                        <li><a href="https://www.imensosoftware.com/technologies/pixijs-development/">PixiJS Development</a></li>
+                      </ul>
+                    </div>
+                    <div style="margin-top: 30px">
+                      <a href="#" class="main-service theme-clr">Analytics</a>
+                       <ul class="sub-service">
+                        <li><a href="https://www.imensosoftware.com/technologies/power-bi-development/">Power BI Development</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <a href="https://www.imensosoftware.com/services/ux-ui-design/" class="main-service theme-clr">UX/UI</a>
+                    <ul class="sub-service">
+                      <li><a href="https://www.imensosoftware.com/ux-ui-design/user-experience-design/">User Experience Design</a></li>
+                       <li><a href="https://www.imensosoftware.com/ux-ui-design/user-interface-design/">User Interface Design</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <!-- / mega menu -->
+          </li>                
+          <li><a href="https://www.imensosoftware.com/work/">Work</a></li>
+          <li><a href="https://www.imensosoftware.com/about/">About</a></li>
+           <li><a href="https://www.imensosoftware.com/blogs/">Blog</a></li>
+          <li><a href="https://www.imensosoftware.com/contact/">Contact</a></li>
+          <li class="extra-right"><a href="https://www.imensosoftware.com/estimate/" class="ps-btn-bordered">Estimate Project</a></li>             
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="theme-bg blog-head-ht"></div>
+<section class="burger">
+	<div class="container">
+		<div class="row gutter">
+			<div class="col-md-12">
+				<div id="primary" class="content-area">
+					<main id="main" class="site-main">
+
+					
+<article class="post-box" id="post-1937" class="post-1937 post type-post status-publish format-standard has-post-thumbnail hentry category-development">
+	<header class="single-on mb5">
+		<span class="post-cat">
+			<span class="is-cate"><a href="https://www.imensosoftware.com/category/development/" rel="category tag">Development</a></span>
+	        <span class="is-date">August 14, 2018</span>
+		</span>
+		<h1 class="entry-title mt1 theme-clr">Micro Services Vs Web Services</h1>	</header><!-- .entry-header -->
+		<div class="im-card-image">
+		<span style="background: url('https://www.imensosoftware.com/wp-content/uploads/2018/08/micro-vs-web-services-1.jpg');" class="img-centered"></span>
+	</div>
+	<div class="post-details">
+		<header class="entry-header">
+			<span class="post-cat">
+				<span class="is-cate"><a href="https://www.imensosoftware.com/category/development/" rel="category tag">Development</a></span>
+		        <span class="is-date">August 14, 2018</span>
+			</span>
+			<h3 class="entry-title mt1 theme-clr">Micro Services Vs Web Services</h3>			
+		</header><!-- .entry-header -->
+			<div class="entry-content">
+			<p><span style="font-weight: 400;">There are two different architectures for <a href="https://www.imensosoftware.com/services/mobile-apps/"><strong>app development</strong></a>, respectively as Micro Services and Web Services. While both of them have some distinct advantages, it is important to know their differences in detail. Let us define, provide details and explain the pros and cons of both of these app development architectures. </span></p>
+<p><span id="more-1937"></span></p>
+<h3><b>What is Web Service?</b><b><br />
+</b></h3>
+<p><span style="font-weight: 400;">Web Service architecture exposes the functionalities and API of the app over the HTTP. Thus it actually helps different technologies to communicate and collaborate with each other. <a href="https://www.imensosoftware.com/services/web-development/"><strong>Web Services</strong></a> are equipped to run over different programming languages or operating systems by utilising common formats such as XML, Jason, etc. Just because they are not built to run only on one operating system or not tied to a single programming language, they allow communication of two apps built with different languages. Basically, this architecture serves the purpose of connecting multiple apps or services into a Service Oriented Architecture (SOA).</span></p>
+<h3><b>What is Micro Service?</b></h3>
+<p><span style="font-weight: 400;">Micro Service architecture is thoroughly independent which is built to deploy for a particular business logic. The main reason for its popularity is its capability to break a large software application into smaller and loosely connected modules that are independently capable to run a unique process. Micro Service architecture is built by event-driven APIs, messaging or through non-HTTP backed RPC. Just because of these broken modules working independently, any application doesn&#8217;t get affected by the failure of a single module. This is ideally used is large enterprise level applications.</span></p>
+<h3><b>Explaining with some use cases</b></h3>
+<p><span style="font-weight: 400;">Now we need to understand how these two architectures actually work. To explain this we are going to take the example of an online store. </span></p>
+<p><span style="font-weight: 400;">Typically, in a web service, the architecture is monolithic in character. The constituents functions of this architecture relate to a single database and together they make the communication with other apps possible. All the functional tasks of such an app invariably depend on the core database and hence if there is a functional problem, the whole app will suffer or stop working. Web services typically suit relatively smaller and easy to maintain business apps with less number of functions. </span></p>
+<p><span style="font-weight: 400;">In complete contrast, the online stores that adopted Micro Service architecture can never stop working or can never face issues that make the whole app stop responding. This happens because in Micro Services different functional contents are deployed independently and any issue with a single component doesn&#8217;t derail the working of the whole app. This is why major online retailers like Amazon has switched on to Micro Services. When each component work for a single function, dealing with it becomes much easier. This architecture particularly suits gigantic and robust business apps serving a huge audience with a multitude of products and too many functions.</span></p>
+<h3><b>Web service Architecture</b><b></b></h3>
+<p><img class="alignnone wp-image-1949 size-full" src="https://www.imensosoftware.com/wp-content/uploads/2018/08/web_service_architecture.png" alt="Web service Architecture" width="890" height="324" srcset="https://www.imensosoftware.com/wp-content/uploads/2018/08/web_service_architecture.png 890w, https://www.imensosoftware.com/wp-content/uploads/2018/08/web_service_architecture-300x109.png 300w, https://www.imensosoftware.com/wp-content/uploads/2018/08/web_service_architecture-768x280.png 768w" sizes="(max-width: 890px) 100vw, 890px" /></p>
+<p><span style="font-weight: 400;">Let us now explain the various constituents and their roles in the web service architecture.</span></p>
+<p><b><i>Provider:</i></b><span style="font-weight: 400;"> The web service provider is responsible for building the app and deploy it on the client app like a browser or an operating system for the larger audience to use it. </span></p>
+<p><b><i>Requestor:</i></b><span style="font-weight: 400;"> The role of the requester is to request the web service provider to deploy the service. For example, a browser or OS make a request to a web app for rendering. </span></p>
+<p><b><i>Broker:</i></b><span style="font-weight: 400;"> In between the role of the UDDI is to locate the particular web service required by the client application. The broker is mainly service registry that lists the various web services. </span></p>
+<p><span style="font-weight: 400;">This is how web service architecture works: </span></p>
+<p><b><i>Publish:</i></b><span style="font-weight: 400;"> The web service provider makes its existence known to the broker or service registry.  This makes the service accessible to the client apps. </span></p>
+<p><b><i>Find: </i></b><span style="font-weight: 400;">Now when the client app requires it consults the broker or service registry to find the required web service. </span></p>
+<p><b><i>Bind:</i></b><span style="font-weight: 400;"> After the client application knows about the web service it binds or invokes the service to make it available through its app to the larger audience or end-users. </span></p>
+<p><span style="font-weight: 400;">Let us now have a look at the key characteristics of web services:</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><b><i>XML-Based:</i></b><span style="font-weight: 400;"> For representing the data at the layers of representation and transportation Web Service architecture depends on XML. Just because XML is a common and uniformly understood language, the web service can be deployed without any platform-specific dependency. </span></p>
+<p><b><i>Loosely Coupled:</i></b><span style="font-weight: 400;"> Web Services remain loosely coupled which means when the web service goes through changes in the future, the way client started deploying it will remain unchanged. </span></p>
+<p><b><i>Both Synchronous or Asynchronous deployment</i></b><span style="font-weight: 400;">: Web services support both synchronous and asynchronous functionalities. While in synchronous deployment client has to look forward to the web server to complete the operation, in case of asynchronous deployment client can invoke a web service and in parallel deploy other functions of his choice. </span></p>
+<p><b><i>Support for Remote Procedure Calls (RPCs):</i></b><span style="font-weight: 400;"> Web services offer support for Remote Procedure Calls (RPCs) to allow the clients to invoke functions, procedures, and methods remotely using the same XML protocol. </span></p>
+<h3><b>Microservice architecture</b></h3>
+<p><img class="alignnone wp-image-1954 size-full" src="https://www.imensosoftware.com/wp-content/uploads/2018/08/mocroservice_architecture-1.png" alt="Microservice architecture" width="824" height="450" srcset="https://www.imensosoftware.com/wp-content/uploads/2018/08/mocroservice_architecture-1.png 824w, https://www.imensosoftware.com/wp-content/uploads/2018/08/mocroservice_architecture-1-300x164.png 300w, https://www.imensosoftware.com/wp-content/uploads/2018/08/mocroservice_architecture-1-768x419.png 768w" sizes="(max-width: 824px) 100vw, 824px" /></p>
+<p><span style="font-weight: 400;">A Micro Service Architecture is built with the following components:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Clients</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Identity Providers</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">API Gateway</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Messaging Formats</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Databases</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Static Content</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Management</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Service Discovery</span></li>
+</ul>
+<p><span style="font-weight: 400;">Let us now explain how the Micro Service architecture really works and the respective role of these components. </span></p>
+<p><b><i>Clients:</i></b><span style="font-weight: 400;"> Different types of clients that try to perform different types of actions like search, build, configure etc. is the basic ad first component of the architecture. </span></p>
+<p><b><i>Identity Providers:</i></b><span style="font-weight: 400;"> Identity providers basically take the requests from the clients, validate them and communicate the same through the API Gateway. </span></p>
+<p><b><i>API Gateway:</i></b><span style="font-weight: 400;"> In Micro Service architecture clients don’t communicate the services directly and so, requests are communicated to the appropriate Micro Services through an API Gateway. Using the API gateway for processing requests has many advantages including the following.</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">All services are automatically updated. </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Some messaging protocols that are not web friendly can also be used in microservices thanks to API gateway. </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">The API Gateway can also take some additional responsibilities like taking care of security, load balancing etc.</span></li>
+</ul>
+<p><b><i>Messaging Formats:</i></b><span style="font-weight: 400;"> In Micro Service architecture two types of message formats are permitted, respectively as Synchronous Messages and Asynchronous Messages.</span></p>
+<p><b><i>Data Handling:</i></b><span style="font-weight: 400;"> Every micro service comes with a private and small database to deploy the required business functionality locally. Through the service API, such databases are updated from time to time. </span></p>
+<p><b><i>Static Content:</i></b><span style="font-weight: 400;"> Whenever multiple Microservices internally communicate they make the communication known through the static content which is uploaded to a cloud service that further can deliver to clients through a Content Delivery Networks (CDN).</span><span style="font-weight: 400;"><br />
+</span><b><i></i></b></p>
+<p><b><i>Management:</i></b><span style="font-weight: 400;"> This is the component that takes care of the service failures and that balances the services on different nodes.</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><b><i>Service Discovery:</i></b><span style="font-weight: 400;"> This component works as a guide to various nodes to find the services required by the clients. </span></p>
+<p><span style="font-weight: 400;">Let us now explain the key properties of Micro Services. </span></p>
+<p><b><i>Allowing breaking into multiple components:</i></b><span style="font-weight: 400;"> A software built to support micro-services can be broken into multiple components. This allows deploying each of these services independently without undermining the integrity of the whole application. </span></p>
+<p><b><i>Focused on business priorities:</i></b><span style="font-weight: 400;"> The popularity of micro-services can mainly be assigned to the ease of prioritising certain functions. Thanks to microservice architecture a business can deliver its clients a neat and singular function without depending on the whole app. This allows faster performing of certain tasks. </span></p>
+<p><b><i>Simple routing:</i></b><span style="font-weight: 400;"> The request processing and deploying process in microservices is very simple. It follows the simple routing process beginning with receiving requests, processing them and generating a response subsequently. </span></p>
+<p><b><i>Decentralized management:</i></b><span style="font-weight: 400;"> Equipped with different technologies, platforms and being able to deploy as tools across various client apps, it offers a highly decentralised management. With each micro-service having its own unique database, it also gets the boost of decentralised data management. </span></p>
+<p><b><i>Failure resistant:</i></b><span style="font-weight: 400;"> When several small services communicate, any one of them fail to respond. Microservices are built to deal with such failure with decentralised architecture. Thanks to its decentralised nature one failure with any one service don&#8217;t affect the other services and their performance. </span><span style="font-weight: 400;"><br />
+</span><b><i></i></b></p>
+<p><b><i>Future-ready:</i></b><span style="font-weight: 400;"> This architecture is equipped to go with the changes and the evolving factors. Unlike monolithic architecture, micro-services can anticipate the devices that in future can deploy the apps. </span></p>
+<h3><b>Pros and Cons of Web Services </b></h3>
+<p><span style="font-weight: 400;">Finally, we need to reduce our discussion to the key advantages and disadvantages of both the web and microservices. Let us explain below the pros and cons of microservices. </span></p>
+<h4></h4>
+<h4><b>Web Services Pros and Cons </b></h4>
+<p><b><i>Pros</i></b></p>
+<ul>
+<li style="font-weight: 400;"><b><i>Interoperability and platform-independence:</i></b><span style="font-weight: 400;"> Web services offer optimum interoperability allowing deployment across diverse platforms, OS platforms and flexibility to work with diverse programming languages. This platform independent nature of web services is a key selling point. </span></li>
+<li style="font-weight: 400;"><b><i>Usability for diverse business logic:</i></b><span style="font-weight: 400;"> Web Services can be deployed over the web by different business systems with a variety of business logic. This helps businesses choosing the web services of their preference with ease. </span></li>
+<li style="font-weight: 400;"><b><i>Reusability: </i></b><span style="font-weight: 400;">For deployment across applications web services need no additional coding and this makes it highly reusable for different business applications across platforms. </span></li>
+<li style="font-weight: 400;"><b><i>Easy to deploy:</i></b><span style="font-weight: 400;"> Being equipped to be deployed over standard web platforms and is fully equipped to communicate with different apps through XML, web services are the easiest as far as deployment is considered. </span></li>
+</ul>
+<p><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><b><i>Cons</i></b></p>
+<ul>
+<li style="font-weight: 400;"><b><i>Not performance-driven:</i></b><span style="font-weight: 400;"> Just because web services use plain text protocols for identifying data, the requests are much longer and this bigger size of the requests often take a toll on the performance when the connection speed is slower. </span></li>
+<li style="font-weight: 400;"><b><i>Not for extended sessions:</i></b><span style="font-weight: 400;"> The core web protocols like HTTP and HTTPS in spite of their simplicity often lack what it needs to maintain a connection for an extended period of time. Such connections are stateless and the communication between the server and the client is extremely short-spanned. This makes the web services vulnerable to performance issues for longer sessions. </span></li>
+<li style="font-weight: 400;"><b><i>Centralised architecture:</i></b><span style="font-weight: 400;"> Having a centralised non-component based architecture a web service is always deployed together in one piece. If any of the functions stops responding, the whole service needs to be addressed.</span></li>
+</ul>
+<h4><b>Microservice Pros and Cons</b></h4>
+<p><span style="font-weight: 400;">We have already discussed micro-services at length and found several advantages. But in spite of the popularity of these services for several reasons, they equally have some crucial problems. </span></p>
+<p><span style="font-weight: 400;">Let us have an understanding of the pros and cons of microservices in detail. </span></p>
+<p><span style="font-weight: 400;"><br />
+</span><b><i>Pros</i></b></p>
+<ul>
+<li style="font-weight: 400;"><b><i>Ease of development:</i></b><span style="font-weight: 400;"> Microservice architecture allows developers the optimum flexibility to develop and deploy services. Even a small developer team can build microservice. It also allows writing codes for different services in different languages. It is easy to make a team member learn and become part of development. </span></li>
+<li style="font-weight: 400;"><b><i>Easy integration and automatic deployment:</i></b><span style="font-weight: 400;"> Microservices can easily be integrated and deployed automatically by using open-source tools like Jenkins, Hudson, etc.</span></li>
+<li style="font-weight: 400;"><b><i>Decentralised architecture allowing fault isolation: </i></b><span style="font-weight: 400;">With a decentralised architecture it allows fitting into diverse business systems and applications. With any micro service being affected, the other services remain unaffected and as performing as ever because of the decentralised architecture. Similarly, any change required for a function of the app, the developers need to fix it with one micro service instead of doing it with the whole app. </span></li>
+<li style="font-weight: 400;"><b><i>It is quicker and speedier:</i></b><span style="font-weight: 400;"> Microservices can start with the web container more quickly helping faster and speedier deployment. </span></li>
+</ul>
+<p><b><i>Cons</i></b></p>
+<ul>
+<li style="font-weight: 400;"><b><i>Complicated testing:</i></b><span style="font-weight: 400;"> Because of the distributed architecture the testing of such services can be a little challenging and complicated. </span></li>
+<li style="font-weight: 400;"><b><i>Complexity and information barriers:</i></b><span style="font-weight: 400;"> Microservice architecture needs to deal with complexities especially for network latency for different apps, multiple message formats, fault tolerance and evolving business logic for different services. A number of services also cause several information barriers for the administrators and users. With the increase in a number of services, complexity level increases. </span></li>
+</ul>
+<h3><b>Conclusion</b></h3>
+<p><span style="font-weight: 400;">Both web services and microservices have their own share of strengths and weaknesses. While some apps will always find the web service architecture more suitable, there will be too many others finding microservices perfect for their application. Web services fit smaller applications catering only a limited number of functions with less demand on prioritisation functions. Microservices are more appropriate for apps with a large number of functions with the mission-critical priority of functions. </span></p>
+		</div><!-- .entry-content -->
+    </div>
+	<footer class="entry-footer">
+		<span class="cat-links">Posted in <a href="https://www.imensosoftware.com/category/development/" rel="category tag">Development</a></span>	</footer><!-- .entry-footer -->
+<a href="https://www.imensosoftware.com/micro-services-vs-web-services/" class="all-posts-link">Read More</a>
+</article><!-- #post-1937 -->
+
+<div id="comments" class="comments-area">
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://www.imensosoftware.com/micro-services-vs-web-services/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://www.imensosoftware.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='1937' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>			</form>
+			</div><!-- #respond -->
+	
+</div><!-- #comments -->
+						<h4 class="mt5">Related Posts</h4>
+						
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://www.imensosoftware.com/freewheeling-design-five-popular-css-frameworks-2018/" rel="prev">Freewheeling with Design- Five Most Popular CSS Frameworks of 2018 for You</a></div><div class="nav-next"><a href="https://www.imensosoftware.com/agile-vs-waterfall-software-development-methodology-which-is-better/" rel="next">Agile vs Waterfall software development Methodology</a></div></div>
+	</nav>
+					</main><!-- #main -->
+				</div><!-- #primary -->
+	</div>
+		</div>
+	</div>
+</section>	
+
+
+<section class="footer burger theme-bg white-text">
+	<div class="container">
+		<div class="row gutter text-center">
+			<div class="col-md-12 wow fadeIn" data-wow-duration="2s" data-wow-delay="0">
+				<h2 class="language-based">Need a successful project?</h2>	
+				<a href="https://www.imensosoftware.com/estimate/" class="ps-btn-2 mt3" id="shake">Get Estimation</a>
+			</div>							
+		</div>		
+	</div>	 
+</section>
+
+<footer class="burger" id="footer"> 
+	<div class="container">
+		<div class="row">      
+			<div class="col-sm-4">
+				<h4>Imenso Software</h4>
+				<p>
+					04A-04B, Ground Floor, Tower B4 <br />Spaze i-Tech Park, Sohna Road,<br> Gurugram, Haryana 122002<br>	Phone: &nbsp;&nbsp;+91-124-429-5523<br>
+					
+				</p>
+				<!-- <h4>Contact</h4> -->
+				<ul>
+					<li><a href="mailto:info@imensosoftware.com"><span class="mild">Email:</span> &nbsp;&nbsp;info@imensosoftware.com</a></li>
+					<li><a  href="skype:imensosoftware?call"><span class="mild">Skype:</span> &nbsp;&nbsp;imensosoftware</a></li>  
+					     
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<h4>Capabilities</h4>
+				<ul class="footer_link">
+					<li><a href="https://www.imensosoftware.com/services/web-development/">Web Application Development</a></li>
+					<li><a href="https://www.imensosoftware.com/technologies/php-application-development/">PHP Development</a></li>
+					<li><a href="https://www.imensosoftware.com/technologies/dot-net-development/">.NET Development</a></li>
+					<li><a href="https://www.imensosoftware.com/technologies/laravel-development/">Laravel Development</a></li>
+					<li><a href="https://www.imensosoftware.com/services/mobile-apps/">Mobile Application Development</a></li> 
+					<li><a href="https://www.imensosoftware.com/services/wordpress-development/">Wordpress Development</a></li>
+					<li><a href="https://www.imensosoftware.com/technologies/power-bi-development/">Power BI Development</a></li>									     
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<h4>Connect</h4>
+				<ul class="social">
+					<li><a target="_blank" href="https://in.linkedin.com/company/imenso-software/"><i class="fa fa-linkedin"></i></a></li>
+					<li><a target="_blank" href="https://www.facebook.com/imensosoftware/"><i class="fa fa-facebook"></i></a></li>
+					<li><a target="_blank" href="https://twitter.com/imensosoftware/"><i class="fa fa-twitter"></i></a></li>
+				</ul>
+				<div class="stars mt2">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-empty"></i>
+				</div>
+				<p class="mt1">Rated 4.5 out of 5 based on 13<br> <a href="https://www.google.com/search?q=imenso+software+india&amp;oq=imenso+soft&amp;aqs=chrome.0.69i59j69i60j69i57j69i61l2j69i59.2648j0j1&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x390d3d45f5fb882f:0xc28729d9c21e4e3d,1" target="_blank"> Google reviews.</a></p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-12">
+				<div class="footer-links">
+					<ul>
+						<li><a href="https://www.imensosoftware.com/">Home</a></li>         
+						<li><a href="https://www.imensosoftware.com/work/">Work</a></li>
+						<li><a href="https://www.imensosoftware.com/about/">About</a></li>
+        				<li><a href="https://www.imensosoftware.com/blogs/">Blog</a></li>  
+        				<li><a href="https://www.imensosoftware.com/hire-developers/">Hire Developers</a></li>
+        				<li><a href="https://www.imensosoftware.com/tech-trends/">Tech Trends</a></li>  
+						<li><a href="https://www.imensosoftware.com/contact/">Contact</a></li>
+						<li><a href="https://www.imensosoftware.com/privacy-policy/">Privacy Policy</a></li>
+						<li class="pull-right">&copy; Imenso Software</li>         
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="oss_title_replace oss-share-vertical-fix oss_5e98cfd3661b6" style="position: fixed;top: 200px;left: 0;" data-share-titles="Micro Services Vs Web Services" data-share-description="There are two different architectures for app development, respectively as Micro Services and Web Se" data-share-imageurl="https://www.imensosoftware.com/wp-content/uploads/2018/08/micro-vs-web-services-1.jpg"  data-share-url="https://www.imensosoftware.com/micro-services-vs-web-services/"></div><script type='text/javascript' src='https://www.imensosoftware.com/wp-includes/js/comment-reply.min.js?ver=5.2.5'></script>
+<script type='text/javascript' src='https://www.imensosoftware.com/wp-includes/js/wp-embed.min.js?ver=5.2.5'></script>
+<script type='text/javascript' src='https://www.imensosoftware.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://www.imensosoftware.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.imensosoftware.com/wp-content/plugins/simplified-social-share/oss-social-sharing/assets/js/oss_share.js?ver=5.2.5'></script>
+<script type='text/javascript' src='https://sharecdn.social9.com/v2/js/opensocialsharedefaulttheme.js?ver=5.2.5'></script>
+<script type='text/javascript' src='https://sharecdn.social9.com/v2/js/opensocialshare.js?ver=5.2.5'></script>
+                            <script type="text/javascript">
+        var shareWidgetVertical = new OpenSocialShare();
+        shareWidgetVertical.init({
+             isEmailContentReadOnly:false,isMobileFriendly:true,isTotalShare:true,isShortenUrl:true,isOpenSingleWindow:false,                 
+            isCounterWidgetTheme: 0, // 0 or 1 - standard themes or counter widget themes
+            isHorizontalCounter: 0, // 0 or 1 - counter on top or counter to right - counter themes only
+            isHorizontalLayout: 0, // 0 or 1 - vertical layout or horizontal layout
+            widgetIconSize: "32", // "16" or "32" - 16px or 32px standard themes only
+            widgetStyle: "square", //"image", "square" or "responsive" - standard themes only
+           
+            providers: {
+                
+                   top: ["Facebook","Twitter","LinkedIn","GooglePlus"]
+                },
+            widgets: {
+                 //all : _private.getAllButtonName(_private.widgetConfig),
+                      top: ["Facebook Like","Twitter Tweet","Google+ Share","Pinterest Pin it","LinkedIn Share"]
+                      },
+           
+            theme: 'OpenSocialShareDefaultTheme',  
+        });
+        shareWidgetVertical.injectInterface(".oss_5e98cfd3661b6");
+        shareWidgetVertical.setWidgetTheme(".oss_5e98cfd3661b6");
+    </script>
+                        
+                            <script type="text/javascript">
+	jQuery('.img-svg').each(function(){
+	    var $img = jQuery(this);
+	    var imgID = $img.attr('id');
+	    var imgClass = $img.attr('class');
+	    var imgURL = $img.attr('src');
+
+	    jQuery.get(imgURL, function(data) {
+	        // Get the SVG tag, ignore the rest
+	        var $svg = jQuery(data).find('svg');
+
+	        // Add replaced image's ID to the new SVG
+	        if(typeof imgID !== 'undefined') {
+	            $svg = $svg.attr('id', imgID);
+	        }
+	        // Add replaced image's classes to the new SVG
+	        if(typeof imgClass !== 'undefined') {
+	            $svg = $svg.attr('class', imgClass+' replaced-svg');
+	        }
+
+	        // Remove any invalid XML tags as per http://validator.w3.org
+	        $svg = $svg.removeAttr('xmlns:a');
+
+	        // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+	        if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+	            $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+	        }
+
+	        // Replace image with new SVG
+	        $img.replaceWith($svg);
+
+	    }, 'xml');
+
+	});
+</script>
+</body>
+
+<!-- Mirrored from www.imensosoftware.com/micro-services-vs-web-services/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Apr 2020 21:36:36 GMT -->
+</html>
