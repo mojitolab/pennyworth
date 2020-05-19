@@ -345,7 +345,6 @@ img.emoji {
   transform: rotate(45deg);
 }
 
-
 button.ps-btn-bordered{
     color:#333;
 }
@@ -361,8 +360,14 @@ button.ps-btn-bordered{
     color: #fff;
     
 }
+/*.container.hero.mt5 {*/
+/*    background: rgba(0,0,0,0.7);*/
+/*}*/
+/*.container.hero.mt5 {*/
+/*    background: rgba(15,1,247,0.6);*/
+/*}*/
 .container.hero.mt5 {
-    background: rgba(0,0,0,0.7);
+    background: linear-gradient(45deg, black, transparent);
 }
 
 .ps-logo {
@@ -370,22 +375,16 @@ button.ps-btn-bordered{
     width: 160px;
 }
 
-@media (min-width:1025px){
-    .tabbable-line .nav-tabs {
-    display: table-cell;
-    width: 100%;
-    vertical-align: top;
-    display: inline-flex;
-    flex-wrap: wrap;
+.service li div{
+    border: 1px solid #337ab7;
+    border-radius: 5px;
+    padding: 10px;
 }
-#technologies .nav-tabs>li {
-    
-    width: 50%;
+.service li:hover{
+    padding:10px;
 }
-#technologies .container {
-    width: 95%;
-}
-
+.service li:hover div{
+    padding:20px;
 }
 
 @media (max-width:1024px){
@@ -400,7 +399,15 @@ button.ps-btn-bordered{
 }
 }
 
-
+.modal a.close-modal {
+    
+    top: 0 !important;
+    right: 0 !important;
+    }
+    .modal {
+    max-width: 1000px !important;
+    background-color: #eff5f5 !important;
+}
 
 </style>
 </head>
@@ -451,7 +458,7 @@ color: white;">
         <ul class="nav navbar-nav navbar-right" id="nav_bar">
 
           <li><a href="index.html#aboutus">About Us</a></li>
-					<li><a href="index.html#client">Client</a></li>
+					<li><a href="index.html#client">Clients</a></li>
            <li><a href="index.html#whyus">Why Us</a></li>
 					<li><a href="services.html">Services</a></li>
 					<li class="extra-right"><button class="ps-btn-bordered" data-toggle="modal" data-target="#contactModal">Quote</button></li>
@@ -462,170 +469,185 @@ color: white;">
 
 
 
-	<!--Contact Form Modal-->
+  <style>.service {
+    /*display: flex;*/
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.service li {
+    padding: 20px;
+    font-weight: bold;
+    /* background: rgba(0,0,200,0.5); */
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+    
+    </style>
 
-	<div class="modal fade  come-from-modal right" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-					<div class="modal-content">
-							<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-									<h4 class="modal-title text-center" id="myModalLabel">Drop us a message</h4>
-							</div>
-							<div class="modal-body">
-								<form method="post">
-	               <div class="row">
-	                    <div class="col-md-6">
-	                        <div class="form-group">
-	                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
-	                        </div>
-	                        <div class="form-group">
-	                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
-	                        </div>
-	                        <div class="form-group">
-	                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
-	                        </div>
-	                        <div class="form-group">
-	                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-	                        </div>
-	                    </div>
-	                    <div class="col-md-6">
-	                        <div class="form-group">
-	                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-	                        </div>
-	                    </div>
-	                </div>
-	            </form>
-							</div>
 
-					</div>
+<div class="row ">
+	<div class="col-sm-12">
+		<br><br><br>
+	   </div>
+		    <div class="col-sm-12">
+		      <img style="width:100%" src="wp-content/themes/imenso/images/ezgif.gif">  
+		    </div>
+			<div class="col-sm-12"   id="services">
+				<div class="text-center heading_h1" style="color:#ee2761;">Services</div>
 			</div>
-	</div>
+			<div class="col-sm-12 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+				<div class="big-para text-center" style="margin-top: 0;">Innovative Solutions for your business.
+					
+					
+					<!-- <button class="btn"><a href="services.html">Know More</a></button><br><br> -->
 
-
-
-<br>
-<br>
-<br>
-<br>
-
-  <section id="technologies" class="burger slate-2" style="padding:60px 0;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <header class="">
-  					<h3 style="color:#ee2761;">Services</h3>
-            <h2 class="theme-clr mt1">Innovative Solutions for your business.</h2>
-          </header>
-        </div>
-      </div>
-      <div class="tabbable-panel">
-          <div class="tabbable-line">
-            <ul class="nav nav-tabs ">
-              <li class="active">
-                <a href="#tab_default_1" data-toggle="tab">
-               <span class="tech_nm">Audit and Advisory</span> </a>
-              </li>
-              <li>
-                <a href="#tab_default_2" data-toggle="tab">
-               <span class="tech_nm">Personal tax planning</span></a>
-              </li>
-              <li>
-                <a href="#tab_default_3" data-toggle="tab">
-               <span class="tech_nm">Representation</span></a>
-              </li>
-              <li>
-                <a href="#tab_default_4" data-toggle="tab">
-                <span class="tech_nm">Bookkeeping</span> </a>
-              </li>
-               <li>
-                <a href="#tab_default_5" data-toggle="tab">
-                <span class="tech_nm">Secretarial Practice</span> </a>
-              </li>
-               <li>
-                <a href="#tab_default_6" data-toggle="tab">
-               <span class="tech_nm">GST</span> </a>
-              </li>
-               <li>
-                <a href="#tab_default_7" data-toggle="tab">
-                <span class="tech_nm">Business Start-Up and Advisory</span> </a>
-              </li>
-              <li>
-               <a href="#tab_default_8" data-toggle="tab">
-               <span class="tech_nm">Corporate Tax Planning</span> </a>
-             </li>
-             <li>
-              <a href="#tab_default_9" data-toggle="tab">
-              <span class="tech_nm">Virtual CFO</span> </a>
-            </li>
-            <li>
-             <a href="#tab_default_10" data-toggle="tab">
-             <span class="tech_nm">HR and Payroll Solutions  </span> </a>
-           </li>
-           <li>
-            <a href="#tab_default_11" data-toggle="tab">
-            <span class="tech_nm">Forensic Audit</span> </a>
-          </li>
-          <li>
-           <a href="#tab_default_12" data-toggle="tab">
-           <span class="tech_nm">Valuation</span> </a>
-         </li>
-         <li>
-          <a href="#tab_default_13" data-toggle="tab">
-          <span class="tech_nm">Preparation of MIS</span> </a>
-        </li>
-        <li>
-         <a href="#tab_default_14" data-toggle="tab">
-         <span class="tech_nm">SEIS SCHEME INCENTIVES</span> </a>
-       </li>
-       <li>
-        <a href="#tab_default_15" data-toggle="tab">
-        <span class="tech_nm">Preparation of Financials</span> </a>
-      </li>
-      <li>
-       <a href="#tab_default_16" data-toggle="tab">
-       <span class="tech_nm">Wealth Management</span> </a>
-     </li>
-     <li>
-      <a href="#tab_default_17" data-toggle="tab">
-      <span class="tech_nm">Inbound and outbound can be clubbed to FEMA</span> </a>
-    </li>
-    <li>
-     <a href="#tab_default_18" data-toggle="tab">
-     <span class="tech_nm">Corporate Restructuring</span> </a>
-   </li>
-   <li>
-    <a href="#tab_default_19" data-toggle="tab">
-    <span class="tech_nm">Succession Planning</span> </a>
+				</div>
+			</div>
+</div>
+<ul class="row service">
+  <li class="col-sm-3">
+      <div>
+    <a href="#tab_default_1" rel="modal:open">
+   <span class="tech_nm">Audit and Advisory</span> </a>
+   </div>
   </li>
-  <li>
-   <a href="#tab_default_20" data-toggle="tab">
-   <span class="tech_nm">Corporate and International Taxation</span> </a>
+  <li class="col-sm-3">
+      <div>
+    <a href="#tab_default_2" rel="modal:open">
+   <span class="tech_nm">Personal tax planning</span></a>
+   </div>
+  </li>
+  <li class="col-sm-3">
+      <div>
+    <a href="#tab_default_3" rel="modal:open">
+   <span class="tech_nm">Representation</span></a>
+   </div>
+  </li>
+  <li class="col-sm-3">
+      <div>
+    <a href="#tab_default_4" rel="modal:open">
+    <span class="tech_nm">Bookkeeping</span> </a>
+   </div>
+  </li>
+   <li class="col-sm-3">
+      <div>
+    <a href="#tab_default_5" rel="modal:open">
+    <span class="tech_nm">Secretarial Practice</span> </a>
+   </div>
+  </li>
+   <li class="col-sm-3">
+      <div>
+    <a href="#tab_default_6" rel="modal:open">
+   <span class="tech_nm">GST</span> </a>
+   </div>
+  </li>
+   <li class="col-sm-3">
+      <div>
+    <a href="#tab_default_7" rel="modal:open">
+    <span class="tech_nm">Business Start-Up and Advisory</span> </a>
+   </div>
+  </li>
+  <li class="col-sm-3">
+      <div>
+   <a href="#tab_default_8" rel="modal:open">
+   <span class="tech_nm">Corporate Tax Planning</span> </a>
+   </div>
  </li>
- <li>
-  <a href="#tab_default_21" data-toggle="tab">
-  <span class="tech_nm">Transfer Pricing</span> </a>
+ <li class="col-sm-3">
+      <div>
+  <a href="#tab_default_9" rel="modal:open">
+  <span class="tech_nm">Virtual CFO</span> </a>
+   </div>
 </li>
-<li>
- <a href="#tab_default_22" data-toggle="tab">
- <span class="tech_nm">Due Diligence</span> </a>
+<li class="col-sm-3">
+      <div>
+ <a href="#tab_default_10" rel="modal:open">
+ <span class="tech_nm">HR and Payroll Solutions  </span> </a>
+   </div>
 </li>
-<li>
- <a href="#tab_default_23" data-toggle="tab">
- <span class="tech_nm">Contract Drafting Services</span> </a>
+<li class="col-sm-3">
+      <div>
+<a href="#tab_default_11" rel="modal:open">
+<span class="tech_nm">Forensic Audit</span> </a>
+   </div>
 </li>
+<li class="col-sm-3">
+      <div>
+<a href="#tab_default_12" rel="modal:open">
+<span class="tech_nm">Valuation</span> </a>
+   </div>
+</li>
+<li class="col-sm-3">
+      <div>
+<a href="#tab_default_13" rel="modal:open">
+<span class="tech_nm">Preparation of MIS</span> </a>
+   </div>
+</li>
+<li class="col-sm-3">
+      <div>
+<a href="#tab_default_14" rel="modal:open">
+<span class="tech_nm">SEIS SCHEME INCENTIVES</span> </a>
+   </div>
+</li>
+<li class="col-sm-3">
+      <div>
+<a href="#tab_default_15" rel="modal:open">
+<span class="tech_nm">Preparation of Financials</span> </a>
+   </div>
+</li>
+<li class="col-sm-3">
+      <div>
+<a href="#tab_default_16" rel="modal:open">
+<span class="tech_nm">Wealth Management</span> </a>
+   </div>
+</li>
+<li class="col-sm-3">
+      <div>
+<a href="#tab_default_17" rel="modal:open">
+<span class="tech_nm">Inbound and Outbound Investment services under FEMA</span> </a>
+   </div>
+</li>
+<li class="col-sm-3">
+      <div>
+<a href="#tab_default_18" rel="modal:open">
+<span class="tech_nm">Corporate Restructuring</span> </a>
+   </div>
+</li>
+<li class="col-sm-3">
+      <div>
+<a href="#tab_default_19" rel="modal:open">
+<span class="tech_nm">Succession Planning</span> </a>
+   </div>
+</li>
+<li class="col-sm-3">
+      <div>
+<a href="#tab_default_20" rel="modal:open">
+<span class="tech_nm">Corporate and International Taxation</span> </a>
+   </div>
+</li>
+<!-- <li class="col-sm-3">-->
+<!--  <a href="#tab_default_21" rel="modal:open">-->
+<!--  <span class="tech_nm">Transfer Pricing</span> </a>-->
+<!--</li>-->
+<!--<li class="col-sm-3">-->
+<!-- <a href="#tab_default_22" rel="modal:open">-->
+<!-- <span class="tech_nm">Due Diligence</span> </a>-->
+<!--</li>-->
+<!--<li class="col-sm-3">-->
+<!-- <a href="#tab_default_23" rel="modal:open">-->
+<!-- <span class="tech_nm">Contract Drafting Services</span> </a>-->
+<!--</li>-->
 </ul>
 
-
-
-            <div class="tab-content">
-              <div class="tab-pane active" id="tab_default_1">
-                <div class="tech__stack">
-                  <div class="tech__stack-content">
-                   <!--  <img src="icons/lamp-bg.png">   -->
-                    <h3 class="mt0">Audit and Advisory</h3>
-                    <p style="text-align: justify; text-justify: inter-word;">Audit assists in the establishment of ‘best practices’ which in turn leads to sound internal controls within the company. Audit also aids in enhancing the efficiency in operations which leads to performance improvement and profit of the company.
+<div class="modal" style="margin-top: 100px;" id="tab_default_1">
+  <div class="tech__stack">
+    <div class="tech__stack-content">
+     <!--  <img src="icons/lamp-bg.png">   -->
+      <h3 class="mt0">Audit and Advisory</h3>
+      <p style="text-align: justify; text-justify: inter-word;">Audit assists in the establishment of ‘best practices’ which in turn leads to sound internal controls within the company. Audit also aids in enhancing the efficiency in operations which leads to performance improvement and profit of the company.
 Audit helps businesses in multiple ways. Notable among those are mentioned below.
-<ul style="list-style: disc; text-align: justify; text-justify: inter-word">
+</p><ul style="list-style: disc; text-align: justify; text-justify: inter-word">
 <li style="padding-left: 15px;
 padding-top: 15px;">Adds value in solving the issues faced by businesses by providing insight on the effectiveness of governance, risk management, and internal control processes.</li>
 <li style="padding-left: 15px;
@@ -637,7 +659,7 @@ padding-top: 15px;">Helps in gaining investor confidence as audit report is a va
 </ul>
 <br>At Penny Worth Consultants, our range of audit advisory services includes:
 <br><br>
-</p>
+<p></p>
 <p style=" text-align: justify; text-justify: inter-word"><u><strong>Internal Audit:</strong></u> Internal audit services empower companies in safeguarding of assets and all key matters involving the interest of the company, and its stakeholders. In addition, our internal audit services are designed to add value and improve operational efficiency of businesses. We help in bringing in a systematic approach to evaluating the efficacy of existing risk management and governance processes.
 
 <br>
@@ -647,7 +669,7 @@ padding-top: 15px;">Helps in gaining investor confidence as audit report is a va
 <br>
 <br>
 <u><strong>Investigative Audit: </strong></u>As part investigative auditing services we use a variety of methodologies to detect discrepancies in operations, financial scenario, and all other key aspects of businesses. We provide expert opinions in implementation on control and enforcement mechanisms. As part of investigative audit, we perform the below.
-<ul style="list-style: disc; text-align: justify; text-justify: inter-word;">
+</p><ul style="list-style: disc; text-align: justify; text-justify: inter-word;">
 <li style="padding-left: 15px; padding-top: 15px;">Examination of financial and operational processes in the organization</li>
 <li style="padding-left: 15px;
 padding-top: 15px;">Provide expert opinions on misappropriation and fraud.</li>
@@ -659,730 +681,730 @@ padding-top: 15px;">Conduct special tests to ascertain credibility of systems an
 padding-top: 15px;">Identify any gaps in the functioning of internal control systems</li>
 <li style="padding-left: 15px;
 padding-top: 15px;">Due diligence to identify any risks involved in mergers and acquisitions, investments and other business activities.</li></ul>
-</p>
+<p></p>
 <p style=" text-align: justify; text-justify: inter-word;"><u><strong>Management Audit:</strong></u>At Penny Worth Consultants, management audit involves systematic examination of decisions and actions of the management to enhance the effectiveness of management actions. As part of an elaborate and effective process, it involves the review of organizational objective, policies, procedures, structure, control and system. The reviews help in checking the efficiency of the management over the activities of the Company.<br>
 Our management audit services concentrate on the inefficiencies and weaknesses of all the functional areas such as sales, inventory, production, purchase, personnel, finance, administration, etc. We evaluate and recommend ways for improving efficiency in all the concerned areas.<br>
 <br>
 
 At Penny Worth Consultants, our expert professionals leverage hands-on experience to provide your company with the support and assistance necessary to enable you to better fulfill your business mission. Supported by our value-added services and consistency in service delivery, we help our clients move to the next level of business goal.
 </p>
-                  </div>
+    </div>
 
-              </div>
-              </div>
-              <div class="tab-pane" id="tab_default_2">
-  	            <div class="tech__stack">
-  	                <div class="tech__stack-content">
-  	                  <h3 class="mt0">Personal & Income Tax Planning</h3>
-  	                   <p style=" text-align: justify; text-justify: inter-word;">Tax planning is an essential part of an individual. Not being able to adequately take advantage of the permissible deductions and exemption provisions provided by the government can negatively impact an individual’s finances. While timely payment of the due taxes comes back to you in the form of the development of the country, it is wise to keep tax liability to the minimum and optimize finances wherever possible.
-											 <br>
-											 <br>
-											 At Penny Worth Consultants, we provide smart tax planning solutions and help you in understanding how tax planning is an integral part of an overall financial plan of individual. We also create efficient tax planning to maximize benefits while helping individuals stay compliant at the same time. The Income Tax Act of India, 1961 elaborates the direct taxes levied on individuals. Most of the individuals fail to assess their tax liability and end up paying unnecessary taxes or opt for inefficient tax savings.
-											 <br>
-											 <br>
-											 We ensure that you maximize the tax saving instruments made available to you. Our experienced tax consultants adopt a proactive approach to maximize tax benefits for you and offer end-to-end tax solutions.
-											 <br>
-											 <br>
-											 We offer a wide range tax planning and preparation services including:
-											 <br>
-											 <br>
-											 <u><strong>Tax Planning for Salaried Individuals</strong></u>
-											 <br>
-											 Tax planning for a salaried individual means an analysis of the financial situation, with an eye on tax efficiency. Efficient tax planning helps a salaried person use tax exemptions, and deductions to reduce tax liability while not evading tax. Salaried individuals must know how to plan investments in a way that will minimize their tax drain.
-											 <br>
-											 We advise salaried individuals on the tax implications and offer expert assistance in filing returns. Our scope of services also includes complete support in claiming a refund of excess tax paid.
-											 <br>
-											 <br>
-											 <u><strong>Capital Gains Tax</strong></u>
-											 <br>
-											 Any gain earned from the sale or transfer of a capital asset is a capital gain. This profit falls under the category ‘income’. Therefore, an individual is liable to pay tax for the amount. The tax in this regard has to be paid in the year of the transfer of the capital asset. Capital gains tax can either be short-term or long-term.
-											 <br>
-											 This tax component can sometimes significantly add to tax outgo. We offer expert services in helping reduce capital gains tax in a legal manner and help in lawful claiming of the applicable exemptions.
-											 <br>
-											 <br>
-											 <u><strong>Tax on House Property</strong></u>
-												<br>
-												Owning a house property comes with tax responsibilities. Paying taxes annually for the house property is one of them. This house property can be anything from your home, your home building rented out as an office, a shop, or a parking place.
-												<br>
-												Your house property is liable for tax under the laws of the Government of India. And tax on house property is an important component on which significant amount tax can be levied. We offer services in tax optimization on such properties and help in staying compliant.
-												<br>
-												<br>
-												<u><strong>Tax on Agricultural Income</strong></u>
-												<br>
-												Income from sources such as farming land and commercial produce comes under agricultural income in India. Further, income from sale of replanted trees, sale of seeds, growing flowers and creepers, rent received for agricultural land also a few examples of agricultural income.
-												<br>
-												However, this type of agricultural income – in scenarios where it is the only source of income – is not taxable in India. We offer expert services in planning, building, and benefitting from income in this category.
-												<br>
-												<br>
-												<u><strong>Tax on Other Incomes</strong></u>
-												<br>
-												We offer services in the areas of savings bank interest, family pension and so on that comprises other sources of income.
-												<br>
-												<br>
-												<u><strong>Income Tax Filings</strong></u>
-												<br>
-												We provide Income Tax filing services to Individuals, HUF, Firms, Corporates, etc. Our filing services enables Individuals to ensure that compliance of law is carried out to perfection and hence avoiding any hardships in the future.
+</div>
+</div>
+<div class="modal" style="margin-top: 100px;" id="tab_default_2">
+  <div class="tech__stack">
+      <div class="tech__stack-content">
+        <h3 class="mt0">Personal &amp; Income Tax Planning</h3>
+         <p style=" text-align: justify; text-justify: inter-word;">Tax planning is an essential part of an individual. Not being able to adequately take advantage of the permissible deductions and exemption provisions provided by the government can negatively impact an individual’s finances. While timely payment of the due taxes comes back to you in the form of the development of the country, it is wise to keep tax liability to the minimum and optimize finances wherever possible.
+         <br>
+         <br>
+         At Penny Worth Consultants, we provide smart tax planning solutions and help you in understanding how tax planning is an integral part of an overall financial plan of individual. We also create efficient tax planning to maximize benefits while helping individuals stay compliant at the same time. The Income Tax Act of India, 1961 elaborates the direct taxes levied on individuals. Most of the individuals fail to assess their tax liability and end up paying unnecessary taxes or opt for inefficient tax savings.
+         <br>
+         <br>
+         We ensure that you maximize the tax saving instruments made available to you. Our experienced tax consultants adopt a proactive approach to maximize tax benefits for you and offer end-to-end tax solutions.
+         <br>
+         <br>
+         We offer a wide range tax planning and preparation services including:
+         <br>
+         <br>
+         <u><strong>Tax Planning for Salaried Individuals</strong></u>
+         <br>
+         Tax planning for a salaried individual means an analysis of the financial situation, with an eye on tax efficiency. Efficient tax planning helps a salaried person use tax exemptions, and deductions to reduce tax liability while not evading tax. Salaried individuals must know how to plan investments in a way that will minimize their tax drain.
+         <br>
+         We advise salaried individuals on the tax implications and offer expert assistance in filing returns. Our scope of services also includes complete support in claiming a refund of excess tax paid.
+         <br>
+         <br>
+         <u><strong>Capital Gains Tax</strong></u>
+         <br>
+         Any gain earned from the sale or transfer of a capital asset is a capital gain. This profit falls under the category ‘income’. Therefore, an individual is liable to pay tax for the amount. The tax in this regard has to be paid in the year of the transfer of the capital asset. Capital gains tax can either be short-term or long-term.
+         <br>
+         This tax component can sometimes significantly add to tax outgo. We offer expert services in helping reduce capital gains tax in a legal manner and help in lawful claiming of the applicable exemptions.
+         <br>
+         <br>
+         <u><strong>Tax on House Property</strong></u>
+          <br>
+          Owning a house property comes with tax responsibilities. Paying taxes annually for the house property is one of them. This house property can be anything from your home, your home building rented out as an office, a shop, or a parking place.
+          <br>
+          Your house property is liable for tax under the laws of the Government of India. And tax on house property is an important component on which significant amount tax can be levied. We offer services in tax optimization on such properties and help in staying compliant.
+          <br>
+          <br>
+          <u><strong>Tax on Agricultural Income</strong></u>
+          <br>
+          Income from sources such as farming land and commercial produce comes under agricultural income in India. Further, income from sale of replanted trees, sale of seeds, growing flowers and creepers, rent received for agricultural land also a few examples of agricultural income.
+          <br>
+          However, this type of agricultural income – in scenarios where it is the only source of income – is not taxable in India. We offer expert services in planning, building, and benefitting from income in this category.
+          <br>
+          <br>
+          <u><strong>Tax on Other Incomes</strong></u>
+          <br>
+          We offer services in the areas of savings bank interest, family pension and so on that comprises other sources of income.
+          <br>
+          <br>
+          <u><strong>Income Tax Filings</strong></u>
+          <br>
+          We provide Income Tax filing services to Individuals, HUF, Firms, Corporates, etc. Our filing services enables Individuals to ensure that compliance of law is carried out to perfection and hence avoiding any hardships in the future.
 
 </p>
-  	                </div>
+      </div>
 
-  	            </div>
-              </div>
+  </div>
+</div>
 
-							<div class="tab-pane" id="tab_default_3">
-  	            <div class="tech__stack">
-  	                <div class="tech__stack-content">
-  	                  <h3 class="mt0">Representation</h3>
-												<p style=" text-align: justify; text-justify: inter-word;">Interaction with authorities at different levels is a part and parcel of doing business. We at Penny Worth ensure that the same is smooth and thus does not bring any undue hardships on your business in the long run. Our representation services ensure that our clients are unscathed from the departments.
-													<br>
-													<br>
-													We provide representation services against Tax Officers, Commissioner Appeals and Tribunals across GST, Income Tax and Corporate Laws.
-													<br>
-													<br>
-													Our representation services are aimed at answering information notices, resolving differences of opinion in matters of law, representing in matters of tax or income investigation and providing appeal services in cases where outcomes are not favourable in first attempt.
-													<br>
-													<br>
-													We ensure complete hand holding of clients with a proper set of do’s and don’ts ensuring that our clients are well equipped to deal with the officers at any given time.
+<div class="modal" style="margin-top: 100px;" id="tab_default_3">
+  <div class="tech__stack">
+      <div class="tech__stack-content">
+        <h3 class="mt0">Representation</h3>
+          <p style=" text-align: justify; text-justify: inter-word;">Interaction with authorities at different levels is a part and parcel of doing business. We at Penny Worth ensure that the same is smooth and thus does not bring any undue hardships on your business in the long run. Our representation services ensure that our clients are unscathed from the departments.
+            <br>
+            <br>
+            We provide representation services against Tax Officers, Commissioner Appeals and Tribunals across GST, Income Tax and Corporate Laws.
+            <br>
+            <br>
+            Our representation services are aimed at answering information notices, resolving differences of opinion in matters of law, representing in matters of tax or income investigation and providing appeal services in cases where outcomes are not favourable in first attempt.
+            <br>
+            <br>
+            We ensure complete hand holding of clients with a proper set of do’s and don’ts ensuring that our clients are well equipped to deal with the officers at any given time.
 
-												</p>
+          </p>
 
-										</div>
-									</div>
-								</div>
+      </div>
+    </div>
+  </div>
 
-								<div class="tab-pane" id="tab_default_4">
-	  	            <div class="tech__stack">
-	  	                <div class="tech__stack-content">
-	  	                  <h3 class="mt0">Bookkeeping</h3>
-												<p style=" text-align: justify; text-justify: inter-word;">
-													Maintaining books of accounts is crucial for running a business. A legal requirement, bookkeeping involves recording financial transactions of a business in an accounting system and the creation of reports. Books of accounts need to be produced when asked by your bank, your investor and the Tax Department.
-													<br>
-													<br>
-													Productive bookkeeping ensures accurate operational and financial information. Bookkeeping also helps in improved cash flow, financial analysis, auditing, management reporting, investor reporting, and compliance.
-													<br>
-													<br>
-													Our scope of bookkeeping services is designed to help small, mid-sized and large business firms across industries. Ready to be used for newly opened businesses or already established companies, our accounting solutions are safe, scalable and cost-effective.
+  <div class="modal" style="margin-top: 100px;" id="tab_default_4">
+    <div class="tech__stack">
+        <div class="tech__stack-content">
+          <h3 class="mt0">Bookkeeping</h3>
+          <p style=" text-align: justify; text-justify: inter-word;">
+            Maintaining books of accounts is crucial for running a business. A legal requirement, bookkeeping involves recording financial transactions of a business in an accounting system and the creation of reports. Books of accounts need to be produced when asked by your bank, your investor and the Tax Department.
+            <br>
+            <br>
+            Productive bookkeeping ensures accurate operational and financial information. Bookkeeping also helps in improved cash flow, financial analysis, auditing, management reporting, investor reporting, and compliance.
+            <br>
+            <br>
+            Our scope of bookkeeping services is designed to help small, mid-sized and large business firms across industries. Ready to be used for newly opened businesses or already established companies, our accounting solutions are safe, scalable and cost-effective.
 <br>
 <br>
 Bookkeeping services at Penny Worth Consultants include:
 <br>
-<ul style="list-style: disc; text-align: justify; text-justify: inter-word;">
-	<li style="padding-left: 15px; padding-top: 15px;">Financial transactions recording</li>
-	<li style="padding-left: 15px; padding-top: 15px;">Revenue reconciliation with bank deposits.</li>
-	<li style="padding-left: 15px; padding-top: 15px;">Electronic document management</li>
-	<li style="padding-left: 15px; padding-top: 15px;">Accounts payable and accounts receivable maintenance</li>
-	<li style="padding-left: 15px; padding-top: 15px;">General ledger and chart of accounts maintenance</li>
-	<li style="padding-left: 15px; padding-top: 15px;">Vendor payments and bills</li>
-	<li style="padding-left: 15px; padding-top: 15px;">Reconciliation of cash, bank and credit card </li>
-	<li style="padding-left: 15px; padding-top: 15px;">Monthly, quarterly, half-yearly and yearly report generation</li>
-	<li style="padding-left: 15px; padding-top: 15px;">Inventory Management</li>
-	<li style="padding-left: 15px; padding-top: 15px;">Filing of returns and reports with the statutory bodies</li>
-	<li style="padding-left: 15px; padding-top: 15px;">Vendor reconciliations</li>
+</p><ul style="list-style: disc; text-align: justify; text-justify: inter-word;">
+<li style="padding-left: 15px; padding-top: 15px;">Financial transactions recording</li>
+<li style="padding-left: 15px; padding-top: 15px;">Revenue reconciliation with bank deposits.</li>
+<li style="padding-left: 15px; padding-top: 15px;">Electronic document management</li>
+<li style="padding-left: 15px; padding-top: 15px;">Accounts payable and accounts receivable maintenance</li>
+<li style="padding-left: 15px; padding-top: 15px;">General ledger and chart of accounts maintenance</li>
+<li style="padding-left: 15px; padding-top: 15px;">Vendor payments and bills</li>
+<li style="padding-left: 15px; padding-top: 15px;">Reconciliation of cash, bank and credit card </li>
+<li style="padding-left: 15px; padding-top: 15px;">Monthly, quarterly, half-yearly and yearly report generation</li>
+<li style="padding-left: 15px; padding-top: 15px;">Inventory Management</li>
+<li style="padding-left: 15px; padding-top: 15px;">Filing of returns and reports with the statutory bodies</li>
+<li style="padding-left: 15px; padding-top: 15px;">Vendor reconciliations</li>
 
 </ul>
 <br>
 <br>
-</p>
+<p></p>
 <p style="list-style: disc; text-align: justify; text-justify: inter-word;">
 Our experienced and qualified accounting professionals help business owners reduce their time spent on non-essential activities thereby facilitating more time spent on the core activities of business management and revenue generation. The team of experts leverages extensive hands on experience to produce accurate reports in a timely manner and help entrepreneurs in sound decision making.
 
-												</p>
-											</div>
-										</div>
-									</div>
+          </p>
+        </div>
+      </div>
+    </div>
 
-									<div class="tab-pane" id="tab_default_5">
-										<div class="tech__stack">
-												<div class="tech__stack-content">
-													<h3 class="mt0">Secretarial Practices</h3>
-													<p style=" text-align: justify; text-justify: inter-word;">
-														For any business to operate successfully, it is important that a wide variety of legally mandated activities are performed diligently. Secretarial practices precisely take care of these necessary activities. The scope of secretarial practices at Penny Worth Consultants ranges from advisory service on the establishment of operations of a business house to providing day-to-day compliance services based on the specific needs and objectives our clients.
-														<br>
-														<br>
-														Our services guide businesses through the changes and challenges in the regulatory landscape in the country. The set of comprehensive services we offer help you reduce managerial burden and allow you to run your firm in a fully complied manner.
-														<br>
-														<br>
-														Under secretarial practices service, we offer the entire gamut of services that take of the crucial aspects which goes a long way in ascertaining that businesses can focus on their core activities.
-														<br>
-														<br>
-														Under Business Set-Up services, our scope includes:
-														<br>
-														<ul style="list-style: disc; text-align: justify; text-justify: inter-word;">
-															<li style="padding-left: 15px; padding-top: 15px;"> Incorporation and company formation activities under the Companies Act, 2013.</li>
-															<li style="padding-left: 15px; padding-top: 15px;">Liaising with the various local, municipal, state and Central Government Authorities for obtaining necessary regulatory approvals and licenses for commencement of the firm.</li>
-															<li style="padding-left: 15px; padding-top: 15px;">Liaising with the Registrar of Companies (RoC) and National Company Law Tribunal (NCLT).</li>
-															<li style="padding-left: 15px; padding-top: 15px;">Advice on digital certificates, director identification, issuing secretarial compliance certificate.</li>
-															<li style="padding-left: 15px; padding-top: 15px;">Providing extensive assistance in various filings.</li>
-														</ul>
-														<br>
-														<br>
-														Our notable regular secretarial practices service includes:
-														<br>
-														<ul style="list-style: disc; text-align: justify; text-justify: inter-word;">
-															<li style="padding-left: 15px; padding-top: 15px;">Assistance in situations such as change of Company name, financial year, registered offices, business objects, increase/decrease of registered share capital or any other change as required.</li>
-															<li style="padding-left: 15px; padding-top: 15px;">Convening and documentation maintenance relating to minutes and resolutions of the board of directors and Annual General Meetings.</li>
-															<li style="padding-left: 15px; padding-top: 15px;"> Incorporation of any group company, branch establishments, project office.
+    <div class="modal" style="margin-top: 100px;" id="tab_default_5">
+      <div class="tech__stack">
+          <div class="tech__stack-content">
+            <h3 class="mt0">Secretarial Practices</h3>
+            <p style=" text-align: justify; text-justify: inter-word;">
+              For any business to operate successfully, it is important that a wide variety of legally mandated activities are performed diligently. Secretarial practices precisely take care of these necessary activities. The scope of secretarial practices at Penny Worth Consultants ranges from advisory service on the establishment of operations of a business house to providing day-to-day compliance services based on the specific needs and objectives our clients.
+              <br>
+              <br>
+              Our services guide businesses through the changes and challenges in the regulatory landscape in the country. The set of comprehensive services we offer help you reduce managerial burden and allow you to run your firm in a fully complied manner.
+              <br>
+              <br>
+              Under secretarial practices service, we offer the entire gamut of services that take of the crucial aspects which goes a long way in ascertaining that businesses can focus on their core activities.
+              <br>
+              <br>
+              Under Business Set-Up services, our scope includes:
+              <br>
+              </p><ul style="list-style: disc; text-align: justify; text-justify: inter-word;">
+                <li style="padding-left: 15px; padding-top: 15px;"> Incorporation and company formation activities under the Companies Act, 2013.</li>
+                <li style="padding-left: 15px; padding-top: 15px;">Liaising with the various local, municipal, state and Central Government Authorities for obtaining necessary regulatory approvals and licenses for commencement of the firm.</li>
+                <li style="padding-left: 15px; padding-top: 15px;">Liaising with the Registrar of Companies (RoC) and National Company Law Tribunal (NCLT).</li>
+                <li style="padding-left: 15px; padding-top: 15px;">Advice on digital certificates, director identification, issuing secretarial compliance certificate.</li>
+                <li style="padding-left: 15px; padding-top: 15px;">Providing extensive assistance in various filings.</li>
+              </ul>
+              <br>
+              <br>
+              Our notable regular secretarial practices service includes:
+              <br>
+              <ul style="list-style: disc; text-align: justify; text-justify: inter-word;">
+                <li style="padding-left: 15px; padding-top: 15px;">Assistance in situations such as change of Company name, financial year, registered offices, business objects, increase/decrease of registered share capital or any other change as required.</li>
+                <li style="padding-left: 15px; padding-top: 15px;">Convening and documentation maintenance relating to minutes and resolutions of the board of directors and Annual General Meetings.</li>
+                <li style="padding-left: 15px; padding-top: 15px;"> Incorporation of any group company, branch establishments, project office.
 Maintenance of statutory registers and records.</li>
-															<li style="padding-left: 15px; padding-top: 15px;">Statutory returns preparation and filing of under the Companies Act, 2013.</li>
-															<li style="padding-left: 15px; padding-top: 15px;">Assistance in the share transfers and share issues in the form of Private placement/Right Issues/Sweat Equity/ESOPs etc.</li>
-															<li style="padding-left: 15px; padding-top: 15px;">Legal and secretarial due diligence.
+                <li style="padding-left: 15px; padding-top: 15px;">Statutory returns preparation and filing of under the Companies Act, 2013.</li>
+                <li style="padding-left: 15px; padding-top: 15px;">Assistance in the share transfers and share issues in the form of Private placement/Right Issues/Sweat Equity/ESOPs etc.</li>
+                <li style="padding-left: 15px; padding-top: 15px;">Legal and secretarial due diligence.
 </li>
-															<li style="padding-left: 15px; padding-top: 15px;">Duties related to authorized capital, allocation of shares and issue of share certificates, change in directors and ownership, and so on.</li>
+                <li style="padding-left: 15px; padding-top: 15px;">Duties related to authorized capital, allocation of shares and issue of share certificates, change in directors and ownership, and so on.</li>
 
-														</ul>
-													</p>
-												</div>
-											</div>
-										</div>
+              </ul>
+            <p></p>
+          </div>
+        </div>
+      </div>
 
-										<div class="tab-pane" id="tab_default_6">
-											<div class="tech__stack">
-													<div class="tech__stack-content">
-														<h3 class="mt0">GST</h3>
-														<p style=" text-align: justify; text-justify: inter-word;">
-															A new, multistage tax structure introduced by Government of India, Goods and Services Tax (GST) is an umbrella tax which replaces a slew of indirect taxes such as central excise duty, duties of excise, additional duties of excise, additional duties of customs, special additional duty of customs, CESS, state vat, central sales tax, etc. GST, however is still in an evolution stage and presents a lot of new challenges to businesses from time to time. In order to ensure that your business can overcome these challenges and ensure that day to day transactions are carried out in a complaint yet profitable manner we provide a slew of services:
-															<br>
-															<ol type="A" style=" text-align: justify; text-justify: inter-word;">
-																<li style="padding-left: 15px; padding-top: 15px;">GST Advisory Services – We ensure that your business is equipped to cope up with the requirements of the ever-evolving GST law and thus avoid any losses which may occur later due to non-compliance related issues. </li>
-																<li style="padding-left: 15px; padding-top: 15px;">GST Compliance Services – We at Penny worth help your business with the umpteen GST compliances on a routine business thus reducing the time spent on such non- core activities and ensuring accurate filing of returns which reduces litigations in the long run. </li>
-																<li style="padding-left: 15px; padding-top: 15px;">GST Representation Services – In case of receipt of any notices from authorities we provide appropriate replies and also represent your case against authorities at various forums such as Tax Officers, Appeallate Commissioner, Tribunal, etc</li>
-															</ol>
-														</p>
-													</div>
-												</div>
-											</div>
+      <div class="modal" style="margin-top: 100px;" id="tab_default_6">
+        <div class="tech__stack">
+            <div class="tech__stack-content">
+              <h3 class="mt0">GST</h3>
+              <p style=" text-align: justify; text-justify: inter-word;">
+                A new, multistage tax structure introduced by Government of India, Goods and Services Tax (GST) is an umbrella tax which replaces a slew of indirect taxes such as central excise duty, duties of excise, additional duties of excise, additional duties of customs, special additional duty of customs, CESS, state vat, central sales tax, etc. GST, however is still in an evolution stage and presents a lot of new challenges to businesses from time to time. In order to ensure that your business can overcome these challenges and ensure that day to day transactions are carried out in a complaint yet profitable manner we provide a slew of services:
+                <br>
+                </p><ol type="A" style=" text-align: justify; text-justify: inter-word;">
+                  <li style="padding-left: 15px; padding-top: 15px;">GST Advisory Services – We ensure that your business is equipped to cope up with the requirements of the ever-evolving GST law and thus avoid any losses which may occur later due to non-compliance related issues. </li>
+                  <li style="padding-left: 15px; padding-top: 15px;">GST Compliance Services – We at Penny worth help your business with the umpteen GST compliances on a routine business thus reducing the time spent on such non- core activities and ensuring accurate filing of returns which reduces litigations in the long run. </li>
+                  <li style="padding-left: 15px; padding-top: 15px;">GST Representation Services – In case of receipt of any notices from authorities we provide appropriate replies and also represent your case against authorities at various forums such as Tax Officers, Appeallate Commissioner, Tribunal, etc</li>
+                </ol>
+              <p></p>
+            </div>
+          </div>
+        </div>
 
-											<div class="tab-pane" id="tab_default_7">
-												<div class="tech__stack">
-														<div class="tech__stack-content">
-															<h3 class="mt0">Business Startup & Advisory</h3>
-															<p style=" text-align: justify; text-justify: inter-word;">
-																Embarking on the journey of a new business comes with a wide variety of steps and decisions which turn out to be decisive for the success of the business in the medium and long-term. Startup enterprises need sound advice and support before starting and at the initial stages. For almost all startup businesses the idea of the new business seems exciting and prosperous.
-																<br>
-																<br>
-																For all business to continue long-term sustainability, financial discipline and management is of utmost importance. However, due to the complexities of starting an enterprise taking crucial decisions and executing them could be a daunting task and they often hinder forward growth.
-																<br>
-																<br>
-																Business startup advisory services provide crucial guidance in the early decision making of a firm. Such advisory services bring in distinctive capability that combines varied entrepreneurial acumen, efficient business insight and realistic solutions. Startup advisory consulting service providers work in close coordination with clients and identify the most critical next steps and help them get executed. They expertly handle situations and scenarios and advise clients for greater return on their investment.
-																<br>
-																<br>
-																At Penny Worth Consultants, our early consulting helps enterprises in:
-																<br>
-																<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																	<li style="padding-left: 15px; padding-top: 15px;">Strategy and planning through robust analysis and statistics, and strategy helping clients with taking critical steps for their business.</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">Legal business formation with expert advice on options such as sole proprietor, corporation, LLC, and the pros and cons of it.</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">Business structure development by helping execute critical decisions in the early stages of the business.</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">Pitch presentations</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">Vendor selection to establish critical components of the business.</li>
+        <div class="modal" style="margin-top: 100px;" id="tab_default_7">
+          <div class="tech__stack">
+              <div class="tech__stack-content">
+                <h3 class="mt0">Business Startup &amp; Advisory</h3>
+                <p style=" text-align: justify; text-justify: inter-word;">
+                  Embarking on the journey of a new business comes with a wide variety of steps and decisions which turn out to be decisive for the success of the business in the medium and long-term. Startup enterprises need sound advice and support before starting and at the initial stages. For almost all startup businesses the idea of the new business seems exciting and prosperous.
+                  <br>
+                  <br>
+                  For all business to continue long-term sustainability, financial discipline and management is of utmost importance. However, due to the complexities of starting an enterprise taking crucial decisions and executing them could be a daunting task and they often hinder forward growth.
+                  <br>
+                  <br>
+                  Business startup advisory services provide crucial guidance in the early decision making of a firm. Such advisory services bring in distinctive capability that combines varied entrepreneurial acumen, efficient business insight and realistic solutions. Startup advisory consulting service providers work in close coordination with clients and identify the most critical next steps and help them get executed. They expertly handle situations and scenarios and advise clients for greater return on their investment.
+                  <br>
+                  <br>
+                  At Penny Worth Consultants, our early consulting helps enterprises in:
+                  <br>
+                  </p><ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                    <li style="padding-left: 15px; padding-top: 15px;">Strategy and planning through robust analysis and statistics, and strategy helping clients with taking critical steps for their business.</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">Legal business formation with expert advice on options such as sole proprietor, corporation, LLC, and the pros and cons of it.</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">Business structure development by helping execute critical decisions in the early stages of the business.</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">Pitch presentations</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">Vendor selection to establish critical components of the business.</li>
 
-																</ul>
-																<br>
-																<br>
-																In addition to the above, we offer expert support to new businesses through the all the stages of growth including:
-																<br>
-																<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																	<li style="padding-left: 15px; padding-top: 15px;">Business model canvas</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">Financial forecasting</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">Business development</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">Deciding on the best legal structure for your business and helping in the implementation of the same</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">Tax planning</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">Advisory board development and recruitment</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">Advice on fund-raising</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">Assisting with incorporation</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">Help in filing with statutory bodies such as EPF and ESI & help in registering with applicable regulatory bodies</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">Advice on efficient cash-flow management</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">MIS reporting</li>
-																	<li style="padding-left: 15px; padding-top: 15px;">Accounting, bookkeeping, and payroll administration</li>
-																</ul>
-																<br>
-																<br>
-															</p>
-															<p style=" text-align: justify; text-justify: inter-word;">
-																We offer a unique bouquet of services, which are tailor-made for the diverse requirements of a startup. Our team of professionals who are experienced in management, finance, strategy, and development, are well equipped to review your business plan, measure your strategy against your business goals, and made necessary suggestions to increase chances of success for your business. We work in close coordination with startup enterprises, applying expertise and providing thorough guidance in all aspects of building a business – from formulating business models, to crafting value propositions.
+                  </ul>
+                  <br>
+                  <br>
+                  In addition to the above, we offer expert support to new businesses through the all the stages of growth including:
+                  <br>
+                  <ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                    <li style="padding-left: 15px; padding-top: 15px;">Business model canvas</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">Financial forecasting</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">Business development</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">Deciding on the best legal structure for your business and helping in the implementation of the same</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">Tax planning</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">Advisory board development and recruitment</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">Advice on fund-raising</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">Assisting with incorporation</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">Help in filing with statutory bodies such as EPF and ESI &amp; help in registering with applicable regulatory bodies</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">Advice on efficient cash-flow management</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">MIS reporting</li>
+                    <li style="padding-left: 15px; padding-top: 15px;">Accounting, bookkeeping, and payroll administration</li>
+                  </ul>
+                  <br>
+                  <br>
+                <p></p>
+                <p style=" text-align: justify; text-justify: inter-word;">
+                  We offer a unique bouquet of services, which are tailor-made for the diverse requirements of a startup. Our team of professionals who are experienced in management, finance, strategy, and development, are well equipped to review your business plan, measure your strategy against your business goals, and made necessary suggestions to increase chances of success for your business. We work in close coordination with startup enterprises, applying expertise and providing thorough guidance in all aspects of building a business – from formulating business models, to crafting value propositions.
 
-															</p>
+                </p>
 
-														</div>
-														</div>
-														</div>
-
-
-														<div class="tab-pane" id="tab_default_8">
-															<div class="tech__stack">
-																	<div class="tech__stack-content">
-																		<h3 class="mt0">Corporate Tax Planning</h3>
-																		<p style=" text-align: justify; text-justify: inter-word;">
-																			Corporate tax planning refers to reducing tax burden on a registered company in a legal way. There are numerous tax deductions and exemption provisions provided under the Income Tax Act in India. A company can significantly reduce its tax liabilities by proper tax planning. To do this, a company should:
-																			<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																				<li style="padding-left: 15px; padding-top: 15px;">Disclose correct information to the IT department.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Staying abreast with applicable laws and their importance.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Planning tax is under the purview of law.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Keep business objectives in mind while planning tax to be able to adopt future changes in the applicable laws. </li>
-
-																			</ul>
-																			<br>
-																			Tax optimization combined with efficient tax planning is one of the most crucial aspects in business growth that determines long-term sustenance. This though could be highly complex. We are there help you navigate this complexity and achieve your larger business goal.
-																			<br>
-																			<br>
-																			We are a group of experienced professionals with first hand exposure to tax-related complexities. We have extensive experience of carrying out complete and efficient tax review of business houses like yours. We are adept in suggesting the most suitable tax structure for the success of your business.
-																			<br>
-																			<br>
-																			Our wide range of corporate tax planning services help businesses in:
-																			<br>
-																			<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																				<li style="padding-left: 15px; padding-top: 15px;">Analysis of income and assets to reduce income tax liabilities.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Minimizing tax liability.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Avail all the applicable reliefs and tax gains.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Assist you with meeting all required tax filings.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Executive compensation issues.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Employee benefit plans</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Ensuring businesses meet compliance deadlines.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Capital gain planning.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Efficient tax review to boost savings and influence the bottom line positively.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Develop opportunities to minimize and defer income taxes.</li>
-																			</ul>
-																			<br>
-																			<br>
-																			Efficient tax planning enhances your enterprise’s cash flow, increases net profits, and generates new opportunities to facilitate growth. We identify the potential areas of risk and work closely to offer sound solutions that mitigate tax compliance exposures.
-																			<br>
-																			Through expert tax planning and competent structuring of business transactions, we at Penny Worth Consultants help entrepreneurs avoid overpayment of tax and create opportunities for growth.
-																		</p>
-																	</div>
-																</div>
-															</div>
+              </div>
+              </div>
+              </div>
 
 
-															<div class="tab-pane" id="tab_default_9">
-																<div class="tech__stack">
-																		<div class="tech__stack-content">
-																			<h3 class="mt0">Virtual CFO</h3>
-																			<p style=" text-align: justify; text-justify: inter-word;">
-																				When an entrepreneur is managing a growing business, he requires a strategic partner who can lead, oversee, and manage the financial landscape of the enterprise. Since businesses are subject to an ever-growing set of regulations, it puts immense pressure on the owner and the management team to comply with each requirement. Since non-compliance is not an option, businesses require competent support to address finance and compliance challenges.
-																				<br>
-																				<br>
-																				Virtual CFO (VCFO) is the answer to this scenario. At Penny Worth Consultants, we provide efficient virtual CFO services to business with much of the same services and expertise as an in-house CFO, across industry verticals and size. Our Virtual CFO services identify and plug the gap that between the requirement for high quality finance services and the fulfillment of such services at the right levels of ownership, quality, timelines and more importantly that aligns with the company's vision/plans. We provide end-to-end finance management services for due diligence, accounting compliances, improvement of finance effectiveness and much more!
-																				<br>
-																				<br>
-																				The range of our services includes:
-																				<br>
-																				<br>
-																				<strong>Business Process Formulations & Business Outlook Advisory</strong>
-																				<br>
-																				Our offerings include services in accounting and payroll administration. We provide innovative solutions to your business needs that can change the outlook of your business to the right direction of growth.
-																				<br>
-																				<br>
-																				<strong>Internal Compliance & Accounting</strong>
-																				<br>
-																				Management teams are required to ensure that their companies are thoroughly compliant with their corporate law obligations at all times. This could create administrative burdens and distraction for the management. We provide professional compliance support to make sure businesses comply with the prevailing law of the land. Our experienced team of experts also offers all the necessary support filing with the concerned authorities.
-																				<br>
-																				<br>
-																				<strong>Compliance Audits</strong>
-																				<br>
-																				Businesses often lack clarity whether they are compliant as per the nature and size of business. At Penny Worth Consultants, we run compliance audits form companies and  confirm whether they are compliant in all applicable regulations or not.
-																				<br>
-																				<br>
-																				<strong>Investor Relations</strong>
-																				<br>
-																				We cover every step of the way from building the reports and documentation needed for prospective investors to IPO.
-																				<br>
-																				<br>
-																				Based on the size and the growth stage of your enterprise, we at Penny Worth Consultants offer multiple, customizable engagement models, based on your specific needs. These flexible models allow you to increase/decrease engagement levels, thereby ensuring cost-effectiveness while providing you with the best CFO talent at the same time.
+              <div class="modal" style="margin-top: 100px;" id="tab_default_8">
+                <div class="tech__stack">
+                    <div class="tech__stack-content">
+                      <h3 class="mt0">Corporate Tax Planning</h3>
+                      <p style=" text-align: justify; text-justify: inter-word;">
+                        Corporate tax planning refers to reducing tax burden on a registered company in a legal way. There are numerous tax deductions and exemption provisions provided under the Income Tax Act in India. A company can significantly reduce its tax liabilities by proper tax planning. To do this, a company should:
+                        </p><ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                          <li style="padding-left: 15px; padding-top: 15px;">Disclose correct information to the IT department.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Staying abreast with applicable laws and their importance.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Planning tax is under the purview of law.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Keep business objectives in mind while planning tax to be able to adopt future changes in the applicable laws. </li>
+
+                        </ul>
+                        <br>
+                        Tax optimization combined with efficient tax planning is one of the most crucial aspects in business growth that determines long-term sustenance. This though could be highly complex. We are there help you navigate this complexity and achieve your larger business goal.
+                        <br>
+                        <br>
+                        We are a group of experienced professionals with first hand exposure to tax-related complexities. We have extensive experience of carrying out complete and efficient tax review of business houses like yours. We are adept in suggesting the most suitable tax structure for the success of your business.
+                        <br>
+                        <br>
+                        Our wide range of corporate tax planning services help businesses in:
+                        <br>
+                        <ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                          <li style="padding-left: 15px; padding-top: 15px;">Analysis of income and assets to reduce income tax liabilities.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Minimizing tax liability.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Avail all the applicable reliefs and tax gains.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Assist you with meeting all required tax filings.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Executive compensation issues.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Employee benefit plans</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Ensuring businesses meet compliance deadlines.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Capital gain planning.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Efficient tax review to boost savings and influence the bottom line positively.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Develop opportunities to minimize and defer income taxes.</li>
+                        </ul>
+                        <br>
+                        <br>
+                        Efficient tax planning enhances your enterprise’s cash flow, increases net profits, and generates new opportunities to facilitate growth. We identify the potential areas of risk and work closely to offer sound solutions that mitigate tax compliance exposures.
+                        <br>
+                        Through expert tax planning and competent structuring of business transactions, we at Penny Worth Consultants help entrepreneurs avoid overpayment of tax and create opportunities for growth.
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="modal" style="margin-top: 100px;" id="tab_default_9">
+                  <div class="tech__stack">
+                      <div class="tech__stack-content">
+                        <h3 class="mt0">Virtual CFO</h3>
+                        <p style=" text-align: justify; text-justify: inter-word;">
+                          When an entrepreneur is managing a growing business, he requires a strategic partner who can lead, oversee, and manage the financial landscape of the enterprise. Since businesses are subject to an ever-growing set of regulations, it puts immense pressure on the owner and the management team to comply with each requirement. Since non-compliance is not an option, businesses require competent support to address finance and compliance challenges.
+                          <br>
+                          <br>
+                          Virtual CFO (VCFO) is the answer to this scenario. At Penny Worth Consultants, we provide efficient virtual CFO services to business with much of the same services and expertise as an in-house CFO, across industry verticals and size. Our Virtual CFO services identify and plug the gap that between the requirement for high quality finance services and the fulfillment of such services at the right levels of ownership, quality, timelines and more importantly that aligns with the company's vision/plans. We provide end-to-end finance management services for due diligence, accounting compliances, improvement of finance effectiveness and much more!
+                          <br>
+                          <br>
+                          The range of our services includes:
+                          <br>
+                          <br>
+                          <strong>Business Process Formulations &amp; Business Outlook Advisory</strong>
+                          <br>
+                          Our offerings include services in accounting and payroll administration. We provide innovative solutions to your business needs that can change the outlook of your business to the right direction of growth.
+                          <br>
+                          <br>
+                          <strong>Internal Compliance &amp; Accounting</strong>
+                          <br>
+                          Management teams are required to ensure that their companies are thoroughly compliant with their corporate law obligations at all times. This could create administrative burdens and distraction for the management. We provide professional compliance support to make sure businesses comply with the prevailing law of the land. Our experienced team of experts also offers all the necessary support filing with the concerned authorities.
+                          <br>
+                          <br>
+                          <strong>Compliance Audits</strong>
+                          <br>
+                          Businesses often lack clarity whether they are compliant as per the nature and size of business. At Penny Worth Consultants, we run compliance audits form companies and  confirm whether they are compliant in all applicable regulations or not.
+                          <br>
+                          <br>
+                          <strong>Investor Relations</strong>
+                          <br>
+                          We cover every step of the way from building the reports and documentation needed for prospective investors to IPO.
+                          <br>
+                          <br>
+                          Based on the size and the growth stage of your enterprise, we at Penny Worth Consultants offer multiple, customizable engagement models, based on your specific needs. These flexible models allow you to increase/decrease engagement levels, thereby ensuring cost-effectiveness while providing you with the best CFO talent at the same time.
 
 
 
-																			</p>
-																		</div>
-																	</div>
-																</div>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-																<div class="tab-pane" id="tab_default_10">
-																	<div class="tech__stack">
-																			<div class="tech__stack-content">
-																				<h3 class="mt0">HR & Payroll Solutions</h3>
-																				<p style=" text-align: justify; text-justify: inter-word;">
-																					Competent HR & payroll management can be a difficult, resource-draining task since it requires a wide variety of skills. They are inherently complex as they involve a wide range of activities that are to be meticulously performed in a timely manner keeping compliance and danger of reputation damage in mind.
-																					<br>
-																					<br>
-																					While the activities seems apparently simple like defining salary structure, monthly calculations, maintenance of muster, reconciliations, etc., they are highly challenging due to the intricacies of legislation and the need to streamline operations while reducing costs.
-																					<br>
-																					<br>
-																					<strong>HR Solutions</strong>
-																					<br>
-																					Optimal management of Human Resources requires ready templates for different stages of the process. At Penny Worth Consultants, we help businesses of all sizes manage all HR processes efficiently. We offer carefully structured and designed solutions based on a long history of successfully managing the HR operations for startups and established firms. Our solutions can be customized to meet your organizational requirement and preferences.
+                  <div class="modal" style="margin-top: 100px;" id="tab_default_10">
+                    <div class="tech__stack">
+                        <div class="tech__stack-content">
+                          <h3 class="mt0">HR &amp; Payroll Solutions</h3>
+                          <p style=" text-align: justify; text-justify: inter-word;">
+                            Competent HR &amp; payroll management can be a difficult, resource-draining task since it requires a wide variety of skills. They are inherently complex as they involve a wide range of activities that are to be meticulously performed in a timely manner keeping compliance and danger of reputation damage in mind.
+                            <br>
+                            <br>
+                            While the activities seems apparently simple like defining salary structure, monthly calculations, maintenance of muster, reconciliations, etc., they are highly challenging due to the intricacies of legislation and the need to streamline operations while reducing costs.
+                            <br>
+                            <br>
+                            <strong>HR Solutions</strong>
+                            <br>
+                            Optimal management of Human Resources requires ready templates for different stages of the process. At Penny Worth Consultants, we help businesses of all sizes manage all HR processes efficiently. We offer carefully structured and designed solutions based on a long history of successfully managing the HR operations for startups and established firms. Our solutions can be customized to meet your organizational requirement and preferences.
 
-																					<br>
-																					<br>
-																					Some of our key HR service offerings include:
-																					<br>
-																					<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																					<li style="padding-left: 15px; padding-top: 15px;">HR consulting & advisory</li>
-																					<li style="padding-left: 15px; padding-top: 15px;">Employee Policies</li>
-																					<li style="padding-left: 15px; padding-top: 15px;">Hiring Modules, Employee Onboarding and Exit Processes</li>
-																					<li style="padding-left: 15px; padding-top: 15px;">Records and Formats </li>
-																					<li style="padding-left: 15px; padding-top: 15px;">Performance Management Processes</li>
-																					<li style="padding-left: 15px; padding-top: 15px;">Employee Compensation Structuring</li>
-																					<li style="padding-left: 15px; padding-top: 15px;">HR Budgets</li>
+                            <br>
+                            <br>
+                            Some of our key HR service offerings include:
+                            <br>
+                            </p><ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                            <li style="padding-left: 15px; padding-top: 15px;">HR consulting &amp; advisory</li>
+                            <li style="padding-left: 15px; padding-top: 15px;">Employee Policies</li>
+                            <li style="padding-left: 15px; padding-top: 15px;">Hiring Modules, Employee Onboarding and Exit Processes</li>
+                            <li style="padding-left: 15px; padding-top: 15px;">Records and Formats </li>
+                            <li style="padding-left: 15px; padding-top: 15px;">Performance Management Processes</li>
+                            <li style="padding-left: 15px; padding-top: 15px;">Employee Compensation Structuring</li>
+                            <li style="padding-left: 15px; padding-top: 15px;">HR Budgets</li>
 
-																				</ul>
-																				<br>
-																				<br>
-																				<strong>The Payroll Process</strong>
-																				<br>
-																				Payroll processing involves a whole range of activities from tracking attendance, to bank details of each employee, deductions, bank uploads, salary slip, timely and accurate calculations with optimal tax implications and other compliances. The vast nature of activities involved call for a sizeable and dedicated team. Since businesses with less number employees incur higher payroll administration, they opt for payroll outsourcing.
+                          </ul>
+                          <br>
+                          <br>
+                          <strong>The Payroll Process</strong>
+                          <br>
+                          Payroll processing involves a whole range of activities from tracking attendance, to bank details of each employee, deductions, bank uploads, salary slip, timely and accurate calculations with optimal tax implications and other compliances. The vast nature of activities involved call for a sizeable and dedicated team. Since businesses with less number employees incur higher payroll administration, they opt for payroll outsourcing.
 Our Payroll experts take care of components like:
-																			<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																				<li style="padding-left: 15px; padding-top: 15px;">Basic pay, HRA, rent allowance.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Gratuity, TDS and other tax obligations.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">PF & accurate employee salary calculations, deductions and filings in compliance with all the payroll laws.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Employee life cycle management.</li>
-																			</ul>
-																			<br>
-																			<br>
+                        <ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                          <li style="padding-left: 15px; padding-top: 15px;">Basic pay, HRA, rent allowance.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Gratuity, TDS and other tax obligations.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">PF &amp; accurate employee salary calculations, deductions and filings in compliance with all the payroll laws.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Employee life cycle management.</li>
+                        </ul>
+                        <br>
+                        <br>
 
-																			<strong>Payroll Administration</strong>
-																			<br>
-																			At Penny Worth Consultants, we are equipped with dedicated and experienced staff with adequate exposure in efficient and confidential payroll administration.
-																			<br>
-																			<br>
-																			We offer comprehensive payroll administration services include:
-																			<br>
-																			<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																				<li style="padding-left: 15px; padding-top: 15px;">Payslip generation according to the need of individual clients.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Management reporting in all necessary aspects including summaries and staff costs.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">Verification of Employee’s IT declarations</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">IT returns filing for employees.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">IT, PT, and ESI statutory reports filing with concerned authorities.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">All statutory payments administration including for EPF, ESI, PT and TDS.</li>
-																				<li style="padding-left: 15px; padding-top: 15px;">All statutory forms preparation.</li>
-																			</ul>
-																			<br>
-																			<br>
-																			Services at Penny Worth Consultants ensure seamless communications between HR and payroll system. The seamless integration gets rid of the requirement to communicate changes across HR and payroll. Any updates made by HR are made available to payroll electronically. This translates to saving time in both departments.
+                        <strong>Payroll Administration</strong>
+                        <br>
+                        At Penny Worth Consultants, we are equipped with dedicated and experienced staff with adequate exposure in efficient and confidential payroll administration.
+                        <br>
+                        <br>
+                        We offer comprehensive payroll administration services include:
+                        <br>
+                        <ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                          <li style="padding-left: 15px; padding-top: 15px;">Payslip generation according to the need of individual clients.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Management reporting in all necessary aspects including summaries and staff costs.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">Verification of Employee’s IT declarations</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">IT returns filing for employees.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">IT, PT, and ESI statutory reports filing with concerned authorities.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">All statutory payments administration including for EPF, ESI, PT and TDS.</li>
+                          <li style="padding-left: 15px; padding-top: 15px;">All statutory forms preparation.</li>
+                        </ul>
+                        <br>
+                        <br>
+                        Services at Penny Worth Consultants ensure seamless communications between HR and payroll system. The seamless integration gets rid of the requirement to communicate changes across HR and payroll. Any updates made by HR are made available to payroll electronically. This translates to saving time in both departments.
 
-																				</p>
-																			</div>
-																		</div>
-																	</div>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
 
-																	<div class="tab-pane" id="tab_default_11">
-																		<div class="tech__stack">
-																				<div class="tech__stack-content">
-																					<h3 class="mt0">Forensic Audit</h3>
-																					<p style=" text-align: justify; text-justify: inter-word;">
-																						The business landscape is constantly evolving on the back of changes in global market dynamics. The scenario is changing at an exponential rate. Situations can get very tricky and complicated at times. Therefore, for enterprises it is vital to understand the risks to face when issues arise. This calls for the need for companies to work towards forensic audit and document developments in a systematic manner.
-																						<br>
-																						<br>
-																						Fraud costs money, reputation, and lower profits. It takes away your time and attention from your business. While discovering the fraud itself can be expensive, the fraud itself costs money and inflicts reputation damage, all these potentially lowering profits in the medium to long-term.
-																						<br>
-																						<br>
-																						We help businesses prevent, detect and mitigate the risk of fraud, misconduct and non-compliance. We are equipped with the required expertise and experience to resolve fraud by providing efficient analytical and investigative services to enterprises across industries, verticals and sizes. Our forensic audit services have helped multiple organizations to function smoothly.
-																						<br>
-																						<br>
-																						We offer extensive services in:
-																						<br>
-																						<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																							<li style="padding-left: 15px; padding-top: 15px;">Assistance in the design of compliance programs</li>
-																							<li style="padding-left: 15px; padding-top: 15px;">Review of business processes, internal fraud controls and compliance programs</li>
-																							<li style="padding-left: 15px; padding-top: 15px;">Fraud and misconduct risk assessment</li>
-																							<li style="padding-left: 15px; padding-top: 15px;">Help in the design and implementation of fraud prevention frameworks</li>
-																							<li style="padding-left: 15px; padding-top: 15px;">Compliance assessments</li>
-																							<li style="padding-left: 15px; padding-top: 15px;">Fraud risk management and fraud prevention training</li>
+                    <div class="modal" style="margin-top: 100px;" id="tab_default_11">
+                      <div class="tech__stack">
+                          <div class="tech__stack-content">
+                            <h3 class="mt0">Forensic Audit</h3>
+                            <p style=" text-align: justify; text-justify: inter-word;">
+                              The business landscape is constantly evolving on the back of changes in global market dynamics. The scenario is changing at an exponential rate. Situations can get very tricky and complicated at times. Therefore, for enterprises it is vital to understand the risks to face when issues arise. This calls for the need for companies to work towards forensic audit and document developments in a systematic manner.
+                              <br>
+                              <br>
+                              Fraud costs money, reputation, and lower profits. It takes away your time and attention from your business. While discovering the fraud itself can be expensive, the fraud itself costs money and inflicts reputation damage, all these potentially lowering profits in the medium to long-term.
+                              <br>
+                              <br>
+                              We help businesses prevent, detect and mitigate the risk of fraud, misconduct and non-compliance. We are equipped with the required expertise and experience to resolve fraud by providing efficient analytical and investigative services to enterprises across industries, verticals and sizes. Our forensic audit services have helped multiple organizations to function smoothly.
+                              <br>
+                              <br>
+                              We offer extensive services in:
+                              <br>
+                              </p><ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                                <li style="padding-left: 15px; padding-top: 15px;">Assistance in the design of compliance programs</li>
+                                <li style="padding-left: 15px; padding-top: 15px;">Review of business processes, internal fraud controls and compliance programs</li>
+                                <li style="padding-left: 15px; padding-top: 15px;">Fraud and misconduct risk assessment</li>
+                                <li style="padding-left: 15px; padding-top: 15px;">Help in the design and implementation of fraud prevention frameworks</li>
+                                <li style="padding-left: 15px; padding-top: 15px;">Compliance assessments</li>
+                                <li style="padding-left: 15px; padding-top: 15px;">Fraud risk management and fraud prevention training</li>
 
-																						</ul>
-																						<br>
-																						<br>
-																						Some additional forensic services offered include:
-																						<br>
-																						<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																							<li style="padding-left: 15px; padding-top: 15px;">Data Mining</li>
-																							<li style="padding-left: 15px; padding-top: 15px;">Background Investigations/Due Diligence</li>
-																							<li style="padding-left: 15px; padding-top: 15px;">Management Fee Transactions</li>
-																							<li style="padding-left: 15px; padding-top: 15px;">Technical Accounting</li>
-																							<li style="padding-left: 15px; padding-top: 15px;">Accountant Liability</li>
-																							<li style="padding-left: 15px; padding-top: 15px;">M&A Fraud Services</li>
-																						</ul>
-																						<br>
-																						<br>
-																						Our team of experts is well trained and has adequate exposure in the past to work efficiently with clients and conduct tasks in a skilful and confidential manner. The team helps resolve disputes without disturbing the usual business processes and mitigate chances of recurrences. The experts adopt unique methods that allow careful analysis of important facts, and prepare necessary documents and reports. Our professionals work with you and help resolve technical issues, listing advisory services, and assessment of claims.
-
-
-																					</p>
-																				</div>
-																			</div>
-																		</div>
+                              </ul>
+                              <br>
+                              <br>
+                              Some additional forensic services offered include:
+                              <br>
+                              <ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                                <li style="padding-left: 15px; padding-top: 15px;">Data Mining</li>
+                                <li style="padding-left: 15px; padding-top: 15px;">Background Investigations/Due Diligence</li>
+                                <li style="padding-left: 15px; padding-top: 15px;">Management Fee Transactions</li>
+                                <li style="padding-left: 15px; padding-top: 15px;">Technical Accounting</li>
+                                <li style="padding-left: 15px; padding-top: 15px;">Accountant Liability</li>
+                                <li style="padding-left: 15px; padding-top: 15px;">M&amp;A Fraud Services</li>
+                              </ul>
+                              <br>
+                              <br>
+                              Our team of experts is well trained and has adequate exposure in the past to work efficiently with clients and conduct tasks in a skilful and confidential manner. The team helps resolve disputes without disturbing the usual business processes and mitigate chances of recurrences. The experts adopt unique methods that allow careful analysis of important facts, and prepare necessary documents and reports. Our professionals work with you and help resolve technical issues, listing advisory services, and assessment of claims.
 
 
-																		<div class="tab-pane" id="tab_default_12">
-																			<div class="tech__stack">
-																					<div class="tech__stack-content">
-																						<h3 class="mt0">Valuation</h3>
-																						<p style=" text-align: justify; text-justify: inter-word;">
-																							Valuation is of significant importance to companies especially in the wake of the changing global regulatory requirements and evolving market dynamics. Valuation is critical for financial reporting under Ind AS, benchmarking studies, statutory reporting of inbound and outbound investments, issuance of ESOPs etc. Often negotiations or internal management decisions, transactions, mergers, acquisitions, etc also necessitate valuation.
-
-																							<br>
-																							<br>
-																							Valuation facilitates decision making by enabling us to determine whether the particular decision will be able to meet with our expectation. Valuation is needed in:
-
-																							<br>
-																							<br>
-																							<strong>Portfolio Management</strong>
-																							<br>
-																							Valuation is of significant importance for an active investor. Valuation plays a pivotal role in portfolio management for fundamental analysts, and a peripheral role for technical analysts.
-																							<br>
-																							<br>
-																							<strong>Valuation in Acquisition Analysis</strong>
-																							<br>
-																							Precise valuation is equally important for both the bidding farm as well as the target firm as both parties aim at maximizing their potential gains. Analysts from both the involved parties need to consider synergy and the value of control to maximize profits for their respective parties.
-																							<br>
-																							<br>
-																							<strong>Valuation in Corporate Finance</strong>
-																							<br>
-																							Valuation attains larger significance for small and medium enterprises when they seek capital infusion from investors. For large firms, their valuation decides the IPO rate when they decide to go public. While venture capitalists’ expected share in a target firm is estimated based their valuation of the firm, for big business houses valuation determines their decision on investment and borrowing.
-																							<br>
-																							<br>
-																							<strong>Valuation of Company Shares </strong>
-																							<br>
-																							Valuation of the shares of a Company is needed for multi-fold reasons. Restructuring is the most common scenario here. In restructuring, a member of proprietary company offers a portion of the shares to another member.
-																							<br>
-																							<br>
-																							<strong>Stock Valuation</strong>
-																							<br>
-																							Stock determines the intrinsic value of a share of a company and generates revenue. Stock valuation predicts the potential market prices for the investors to time their sales or purchase of investments.
-																							<br>
-																							<br>
-																							It is very important to know the current value of the stock. While for internal matters like MIS, financial statements for internal circulation, it is not compulsory to go for a valuation by professional. However, in case of creating charge on stock, merger transactions, etc. it requires valuation.
-																							<br>
-																							<br>
-																							At Penny Worth Consultants, we leverage finance and accounting expertise, combined with the use of sophisticated valuation methodologies to offer valuation services for commercial & business reasons and for statutory purposes. Our team of experts with experience in tax, regulatory and business advisory constantly monitors the changing regulations and consistently provides input and develops implementation guidance and new financial reporting rules with valuation implications.
-																							<br>
-																							<br>
-																							We work closely with our clients to understand the exact valuation needs and work out strategies for various stakeholders. We ensure that regulators understand our conclusions and valuation methodologies. Over the years, we have earned trust of stakeholders by providing sound and accurate valuation.
-																						</p>
-																					</div>
-																				</div>
-																			</div>
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
 
 
-																			<div class="tab-pane" id="tab_default_13">
-																				<div class="tech__stack">
-																						<div class="tech__stack-content">
-																							<h3 class="mt0">Preparation of MIS</h3>
-																							<p style=" text-align: justify; text-justify: inter-word;">
-																								Management Information System (MIS) refers to a host of systems that collect, organize, process and broadcast information related to a business. The data collected from different processes and operation wings are processed and analyzed before presenting to the management team in the form of standardized reports. These are reports generated to evaluate day-to-day activities of businesses or their problems that arise in the process of running the business smoothly. Some examples of MIS reports may include Cash Flow Statement, Profit and Loss Report, Expenses Report, Inventory Status Reports, etc.
-																								<br>
-																								<br>
-																								Meaningful insights from these reports help enterprise owners make decisions, and take stock of progress of their business and make necessary amendments or corrective measures to take the company forward. MIS reporting is a crucial tool that is used by businesses of all sizes and across industries.
-																								<br>
-																								<br>
-																								Efficient MIS preparation can bring about sizeable benefits to an enterprise including:
-																								<br>
-																								<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																									<li style="padding-left: 15px; padding-top: 15px;">Enhanced operational efficiency</li>
-																									<li style="padding-left: 15px; padding-top: 15px;">Improved control and supervision</li>
-																									<li style="padding-left: 15px; padding-top: 15px;">Efficient internal and external communication</li>
-																									<li style="padding-left: 15px; padding-top: 15px;">Superior planning</li>
-																									<li style="padding-left: 15px; padding-top: 15px;">Precise and resourceful data collection</li>
-																									<li style="padding-left: 15px; padding-top: 15px;">Strategic and sound management decision making</li>
-																									<li style="padding-left: 15px; padding-top: 15px;">Improved customer satisfaction</li>
-																								</ul>
-																								<br>
-																								<br>
-																							</p>
-																							<p style=" text-align: justify; text-justify: inter-word;">
-																								Expert team of professionals at Penny Worth Consultants takes into account all necessary parameters to come up with the most precise reports. They provide you with quality reports which will empower you adequately manage and execute organizational functions in a way to run the business in an efficient manner.
-																								<br>
-																								<br>
-																								MIS preparation services at Penny Worth Consultants include:
-																								<br>
-																								<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																									<li style="padding-left: 15px; padding-top: 15px;">Financial analysis report</li>
-																									<li style="padding-left: 15px; padding-top: 15px;">Target performance report</li>
-																									<li style="padding-left: 15px; padding-top: 15px;">Sales MIS</li>
-																									<li style="padding-left: 15px; padding-top: 15px;">HR MIS</li>
-																									<li style="padding-left: 15px; padding-top: 15px;">Product performance report</li>
-																									<li style="padding-left: 15px; padding-top: 15px;">Inventory status report</li>
-																									<li style="padding-left: 15px; padding-top: 15px;">Department performance report</li>
-																									<li style="padding-left: 15px; padding-top: 15px;">Routine MIS reports</li>
-																									<li style="padding-left: 15px; padding-top: 15px;">CEO Dashboard</li>
-																								</ul>
-																							</p>
-																						</div>
-																					</div>
-																				</div>
+                      <div class="modal" style="margin-top: 100px;" id="tab_default_12">
+                        <div class="tech__stack">
+                            <div class="tech__stack-content">
+                              <h3 class="mt0">Valuation</h3>
+                              <p style=" text-align: justify; text-justify: inter-word;">
+                                Valuation is of significant importance to companies especially in the wake of the changing global regulatory requirements and evolving market dynamics. Valuation is critical for financial reporting under Ind AS, benchmarking studies, statutory reporting of inbound and outbound investments, issuance of ESOPs etc. Often negotiations or internal management decisions, transactions, mergers, acquisitions, etc also necessitate valuation.
 
-																				<div class="tab-pane" id="tab_default_14">
-																					<div class="tech__stack">
-																							<div class="tech__stack-content">
-																								<h3 class="mt0">SEIS Scheme Incentives</h3>
-																								<p style=" text-align: justify; text-justify: inter-word;">
-																									Service Exports from India Scheme (SEIS) is aimed at promoting and maximizing export from India by providing incentives for eligible exporters. Introduced under the Foreign Trade Policy (FTP) - 2015-20, the Government of India, SEIS replaced the previous scheme Served from India Scheme (SFIS) under Foreign Trade Policy, 2009-15.
-																									<br>
-																									<br>
-																									The SEIS expanded the scope of services for which the benefits were available under the SFIS scheme. The SEIS incentives can be availed by all the companies in India which are exporting services. SFIS incentives were not available to SEZ units, SEIS incentives are offered to SEZ units as well.
-																									<br>
-																									<br>
-																									Under SEIS, the exporters of notified services are incentivized not in the form of cash remittance but in the form of Duty Credit Scrip. Depending on the nature of service, Duty Credit Scrip is calculated as specific parentage in the range of 3% to 5% of Net Foreign Earnings, and covers service providers located in India. SEIS scrips are transferrable, can also be sold to other assessee and can be used for payment of various taxes levied on goods and services.
-																									<br>
-																									<br>
-																									<strong>Eligibility criteria to claim benefits under the SEIS </strong>
-																										<br>
-																										To be eligible for duty credit scrips, Service providers of notified services should be located in India and should have minimum net free foreign exchange earnings of US$15,000 in the year of rendering the services. For individual service providers and sole proprietorship, such minimum net free foreign exchange earnings criteria is US$10,000 in the preceding financial year is required to be eligible for the scheme. Further, the exporter should have to have an active Import Export Code (IE Code) at the time of rendering such services for which rewards are claimed in order to claim reward under the SEIS scheme.
-																										<br>
-																										<br>
-																										<strong>Service NOT eligible to claim benefits under the SEIS</strong>
-																										<br>
-																										Foreign exchange received for other purposes like equity, debt, donation, loan repayment, etc. are excluded.
-																										<br>
-																										<br>
-																										Service eligible and the rate of incentives under the SEIS include:
+                                <br>
+                                <br>
+                                Valuation facilitates decision making by enabling us to determine whether the particular decision will be able to meet with our expectation. Valuation is needed in:
 
-																										<br>
-																										<table border="1">
-																										  <tr>
-																										    <th >Services</th>
-																										    <th>Rate Rewards</th>
-																										  </tr>
-																										  <tr>
-																										    <td>Professional Services</td>
-																										    <td class="text-center">5%</td>
-																										  </tr>
-																										  <tr>
-																										    <td>Research & Development Services</td>
-																										    <td class="text-center">5%</td>
-																										  </tr>
-																											<tr>
-																												<td>Rental/Leasing services without operators</td>
-																												<td class="text-center">5%</td>
-																											</tr>
-																											<tr>
-																												<td>Audiovisual services</td>
-																												<td class="text-center">5%</td>
-																											</tr>
-																											<tr>
-																												<td>Construction & related Engineering Services</td>
-																												<td class="text-center">5%</td>
-																											</tr>
-																											<tr>
-																												<td>Educational Services</td>
-																												<td class="text-center">5%</td>
-																											</tr>
-																											<tr>
-																												<td>Environmental Services</td>
-																												<td class="text-center">5%</td>
-																											</tr>
-																											<tr>
-																												<td>Health-Related and Social Services</td>
-																												<td class="text-center">5%</td>
-																											</tr>
-																											<tr>
-																												<td>Recreational, Cultural and Sporting Services (other than audio visual services)</td>
-																												<td class="text-center">5%</td>
-																											</tr>
-																											<tr>
-																												<td>Maritime Transport Services</td>
-																												<td class="text-center">5%</td>
-																											</tr>
-																											<tr>
-																												<td>Air Transport Services</td>
-																												<td class="text-center">5%</td>
-																											</tr>
-																											<tr>
-																												<td>Road Transport Services </td>
-																												<td class="text-center">5%</td>
-																											</tr>
-																											<tr>
-																												<td>Services auxiliary to all modes of Transport </td>
-																												<td class="text-center">5%</td>
-																											</tr>
-																											<tr>
-																												<td>Tourism and Travel Related Services </td>
-																												<td class="text-center">3-5%</td>
-																											</tr>
-																											<tr>
-																												<td>Other Business Services</td>
-																												<td class="text-center">3%</td>
-																											</tr>
-
-																										</table>
-																										<br>
-																										<br>
-																										Prior to the applying for SEIS export incentives, exporters are required to undertake a analysis of different business and transactional aspects including nature of business, types of  services, etc. are to be undertaken. At Penny Worth Consultants, we are capable of providing all the necessary services and help your business through the entire process of getting SEIS scheme incentives.  We are ready to provide you end to end services specific to your requirements.
+                                <br>
+                                <br>
+                                <strong>Portfolio Management</strong>
+                                <br>
+                                Valuation is of significant importance for an active investor. Valuation plays a pivotal role in portfolio management for fundamental analysts, and a peripheral role for technical analysts.
+                                <br>
+                                <br>
+                                <strong>Valuation in Acquisition Analysis</strong>
+                                <br>
+                                Precise valuation is equally important for both the bidding farm as well as the target firm as both parties aim at maximizing their potential gains. Analysts from both the involved parties need to consider synergy and the value of control to maximize profits for their respective parties.
+                                <br>
+                                <br>
+                                <strong>Valuation in Corporate Finance</strong>
+                                <br>
+                                Valuation attains larger significance for small and medium enterprises when they seek capital infusion from investors. For large firms, their valuation decides the IPO rate when they decide to go public. While venture capitalists’ expected share in a target firm is estimated based their valuation of the firm, for big business houses valuation determines their decision on investment and borrowing.
+                                <br>
+                                <br>
+                                <strong>Valuation of Company Shares </strong>
+                                <br>
+                                Valuation of the shares of a Company is needed for multi-fold reasons. Restructuring is the most common scenario here. In restructuring, a member of proprietary company offers a portion of the shares to another member.
+                                <br>
+                                <br>
+                                <strong>Stock Valuation</strong>
+                                <br>
+                                Stock determines the intrinsic value of a share of a company and generates revenue. Stock valuation predicts the potential market prices for the investors to time their sales or purchase of investments.
+                                <br>
+                                <br>
+                                It is very important to know the current value of the stock. While for internal matters like MIS, financial statements for internal circulation, it is not compulsory to go for a valuation by professional. However, in case of creating charge on stock, merger transactions, etc. it requires valuation.
+                                <br>
+                                <br>
+                                At Penny Worth Consultants, we leverage finance and accounting expertise, combined with the use of sophisticated valuation methodologies to offer valuation services for commercial &amp; business reasons and for statutory purposes. Our team of experts with experience in tax, regulatory and business advisory constantly monitors the changing regulations and consistently provides input and develops implementation guidance and new financial reporting rules with valuation implications.
+                                <br>
+                                <br>
+                                We work closely with our clients to understand the exact valuation needs and work out strategies for various stakeholders. We ensure that regulators understand our conclusions and valuation methodologies. Over the years, we have earned trust of stakeholders by providing sound and accurate valuation.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
 
 
-																								</p>
-																							</div>
-																						</div>
-																					</div>
+                        <div class="modal" style="margin-top: 100px;" id="tab_default_13">
+                          <div class="tech__stack">
+                              <div class="tech__stack-content">
+                                <h3 class="mt0">Preparation of MIS</h3>
+                                <p style=" text-align: justify; text-justify: inter-word;">
+                                  Management Information System (MIS) refers to a host of systems that collect, organize, process and broadcast information related to a business. The data collected from different processes and operation wings are processed and analyzed before presenting to the management team in the form of standardized reports. These are reports generated to evaluate day-to-day activities of businesses or their problems that arise in the process of running the business smoothly. Some examples of MIS reports may include Cash Flow Statement, Profit and Loss Report, Expenses Report, Inventory Status Reports, etc.
+                                  <br>
+                                  <br>
+                                  Meaningful insights from these reports help enterprise owners make decisions, and take stock of progress of their business and make necessary amendments or corrective measures to take the company forward. MIS reporting is a crucial tool that is used by businesses of all sizes and across industries.
+                                  <br>
+                                  <br>
+                                  Efficient MIS preparation can bring about sizeable benefits to an enterprise including:
+                                  <br>
+                                  </p><ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                                    <li style="padding-left: 15px; padding-top: 15px;">Enhanced operational efficiency</li>
+                                    <li style="padding-left: 15px; padding-top: 15px;">Improved control and supervision</li>
+                                    <li style="padding-left: 15px; padding-top: 15px;">Efficient internal and external communication</li>
+                                    <li style="padding-left: 15px; padding-top: 15px;">Superior planning</li>
+                                    <li style="padding-left: 15px; padding-top: 15px;">Precise and resourceful data collection</li>
+                                    <li style="padding-left: 15px; padding-top: 15px;">Strategic and sound management decision making</li>
+                                    <li style="padding-left: 15px; padding-top: 15px;">Improved customer satisfaction</li>
+                                  </ul>
+                                  <br>
+                                  <br>
+                                <p></p>
+                                <p style=" text-align: justify; text-justify: inter-word;">
+                                  Expert team of professionals at Penny Worth Consultants takes into account all necessary parameters to come up with the most precise reports. They provide you with quality reports which will empower you adequately manage and execute organizational functions in a way to run the business in an efficient manner.
+                                  <br>
+                                  <br>
+                                  MIS preparation services at Penny Worth Consultants include:
+                                  <br>
+                                  </p><ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                                    <li style="padding-left: 15px; padding-top: 15px;">Financial analysis report</li>
+                                    <li style="padding-left: 15px; padding-top: 15px;">Target performance report</li>
+                                    <li style="padding-left: 15px; padding-top: 15px;">Sales MIS</li>
+                                    <li style="padding-left: 15px; padding-top: 15px;">HR MIS</li>
+                                    <li style="padding-left: 15px; padding-top: 15px;">Product performance report</li>
+                                    <li style="padding-left: 15px; padding-top: 15px;">Inventory status report</li>
+                                    <li style="padding-left: 15px; padding-top: 15px;">Department performance report</li>
+                                    <li style="padding-left: 15px; padding-top: 15px;">Routine MIS reports</li>
+                                    <li style="padding-left: 15px; padding-top: 15px;">CEO Dashboard</li>
+                                  </ul>
+                                <p></p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="modal" style="margin-top: 100px;" id="tab_default_14">
+                            <div class="tech__stack">
+                                <div class="tech__stack-content">
+                                  <h3 class="mt0">SEIS Scheme Incentives</h3>
+                                  <p style=" text-align: justify; text-justify: inter-word;">
+                                    Service Exports from India Scheme (SEIS) is aimed at promoting and maximizing export from India by providing incentives for eligible exporters. Introduced under the Foreign Trade Policy (FTP) - 2015-20, the Government of India, SEIS replaced the previous scheme Served from India Scheme (SFIS) under Foreign Trade Policy, 2009-15.
+                                    <br>
+                                    <br>
+                                    The SEIS expanded the scope of services for which the benefits were available under the SFIS scheme. The SEIS incentives can be availed by all the companies in India which are exporting services. SFIS incentives were not available to SEZ units, SEIS incentives are offered to SEZ units as well.
+                                    <br>
+                                    <br>
+                                    Under SEIS, the exporters of notified services are incentivized not in the form of cash remittance but in the form of Duty Credit Scrip. Depending on the nature of service, Duty Credit Scrip is calculated as specific parentage in the range of 3% to 5% of Net Foreign Earnings, and covers service providers located in India. SEIS scrips are transferrable, can also be sold to other assessee and can be used for payment of various taxes levied on goods and services.
+                                    <br>
+                                    <br>
+                                    <strong>Eligibility criteria to claim benefits under the SEIS </strong>
+                                      <br>
+                                      To be eligible for duty credit scrips, Service providers of notified services should be located in India and should have minimum net free foreign exchange earnings of US$15,000 in the year of rendering the services. For individual service providers and sole proprietorship, such minimum net free foreign exchange earnings criteria is US$10,000 in the preceding financial year is required to be eligible for the scheme. Further, the exporter should have to have an active Import Export Code (IE Code) at the time of rendering such services for which rewards are claimed in order to claim reward under the SEIS scheme.
+                                      <br>
+                                      <br>
+                                      <strong>Service NOT eligible to claim benefits under the SEIS</strong>
+                                      <br>
+                                      Foreign exchange received for other purposes like equity, debt, donation, loan repayment, etc. are excluded.
+                                      <br>
+                                      <br>
+                                      Service eligible and the rate of incentives under the SEIS include:
+
+                                      <br>
+                                      </p><table border="1">
+                                        <tbody><tr>
+                                          <th>Services</th>
+                                          <th>Rate Rewards</th>
+                                        </tr>
+                                        <tr>
+                                          <td>Professional Services</td>
+                                          <td class="text-center">5%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Research &amp; Development Services</td>
+                                          <td class="text-center">5%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Rental/Leasing services without operators</td>
+                                          <td class="text-center">5%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Audiovisual services</td>
+                                          <td class="text-center">5%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Construction &amp; related Engineering Services</td>
+                                          <td class="text-center">5%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Educational Services</td>
+                                          <td class="text-center">5%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Environmental Services</td>
+                                          <td class="text-center">5%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Health-Related and Social Services</td>
+                                          <td class="text-center">5%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Recreational, Cultural and Sporting Services (other than audio visual services)</td>
+                                          <td class="text-center">5%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Maritime Transport Services</td>
+                                          <td class="text-center">5%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Air Transport Services</td>
+                                          <td class="text-center">5%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Road Transport Services </td>
+                                          <td class="text-center">5%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Services auxiliary to all modes of Transport </td>
+                                          <td class="text-center">5%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Tourism and Travel Related Services </td>
+                                          <td class="text-center">3-5%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Other Business Services</td>
+                                          <td class="text-center">3%</td>
+                                        </tr>
+
+                                      </tbody></table>
+                                      <br>
+                                      <br>
+                                      Prior to the applying for SEIS export incentives, exporters are required to undertake a analysis of different business and transactional aspects including nature of business, types of  services, etc. are to be undertaken. At Penny Worth Consultants, we are capable of providing all the necessary services and help your business through the entire process of getting SEIS scheme incentives.  We are ready to provide you end to end services specific to your requirements.
 
 
-																					<div class="tab-pane" id="tab_default_15">
-																						<div class="tech__stack">
-																								<div class="tech__stack-content">
-																									<h3 class="mt0">Preparation of Financials</h3>
-																									<p style=" text-align: justify; text-justify: inter-word;">
-
-																										Preparation of financial statements is one of the most crucial steps in accounting. Financial statements are the end product of the accounting system in any firm and they are tools for providing useful information to external users. The preparation includes income statement, statement of retained earnings, balance sheet and cash flow statement.
-																										<br>
-																										<br>
-																										Income statement: Contains details on revenues, expenses, and the resulting net income. It depicts the overall profitability of a business for the time period in question. Also known as a profit and loss statement, income statement provides details the expenses for the time period and losses from any activity.
-																										<br>
-																										<br>
-																										Statement of retained earnings: Covers the retained earnings at the beginning and end of the accounting period. Information required for preparing these reports include beginning retained earnings, obtained from the previous statement of retained earnings; net income, obtained from the income statement; and dividends paid during the accounting period.
-																										<br>
-																										<br>
-																											<strong>Balance sheet:</strong> Offers details of the assets, liabilities, and shareholder equity of the company. It is prepared using balances of all asset accounts; balances of all liability accounts; capital stock balance; and retained earnings.
-																											<br>
-																											<br>
-																											<strong>Cash flow statement:</strong> Explains the reasons for changes in the cash balance, and offers details about sources and uses of cash in the operating, financing, and investing activities of the enterprise.
-
-																									</p>
-																								</div>
-																							</div>
-																						</div>
+                                  <p></p>
+                                </div>
+                              </div>
+                            </div>
 
 
-																						<div class="tab-pane" id="tab_default_16">
-																							<div class="tech__stack">
-																									<div class="tech__stack-content">
-																										<h3 class="mt0">Wealth Management</h3>
-																										<p style=" text-align: justify; text-justify: inter-word;">
-																											Wealth Creation is a difficult task which entails a lot of sweat and blood of each individual. We ensure that once created the wealth grows on its own and does not get diluted with poor investments. We offer a host of Wealth Management services including but not limited to:
-																											 <br>
-																											 <ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																												 <li style="padding-left: 15px; padding-top: 15px;">Financial Planning</li>
-																												 <li style="padding-left: 15px; padding-top: 15px;">Investment Advisory</li>
-																												 <li style="padding-left: 15px; padding-top: 15px;">Estate Planning</li>
-																												 <li style="padding-left: 15px; padding-top: 15px;">Investment Options identification and vetting</li>
-																												 <li style="padding-left: 15px; padding-top: 15px;">Business Sale Management</li>
-																											 </ul>
-																										</p>
-																									</div>
-																								</div>
-																							</div>
+                            <div class="modal" style="margin-top: 100px;" id="tab_default_15">
+                              <div class="tech__stack">
+                                  <div class="tech__stack-content">
+                                    <h3 class="mt0">Preparation of Financials</h3>
+                                    <p style=" text-align: justify; text-justify: inter-word;">
 
-																							<div class="tab-pane" id="tab_default_17">
-																								<div class="tech__stack">
-																										<div class="tech__stack-content">
-																											<h3 class="mt0">Inbound & Outbound Advisory & FEMA Advisory Services</h3>
-																											<p style=" text-align: justify; text-justify: inter-word;">
-																												With the opening up of the world market on the back of global economic reforms, there has been a constant spur in foreign trade and investment between companies across countries. This increase in cross-border transactions involving both inbound and outbound investment makes it imperative for businesses to acquire expertise in business, tax and regulatory aspects of the country where the entity belongs and also of the country of the target company.
-																												<br>
-																												<br>
-																												Complexities compound with the need to understand and ensure compliance with complex legislation covered under the Foreign Exchange Management Act (FEMA), which facilitates external trade and payments, and provides guidelines for the dealings of all foreign exchange transactions in India. FEMA is applicable to:
-																												<br>
-																												<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																													<li style="padding-left: 15px; padding-top: 15px;">Export & Import of any commodity and/or service.</li>
-																													<li style="padding-left: 15px; padding-top: 15px;">Foreign exchange.</li>
-																													<li style="padding-left: 15px; padding-top: 15px;">Foreign security.</li>
-																													<li style="padding-left: 15px; padding-top: 15px;">Banking, financial and insurance services.</li>
-																													<li style="padding-left: 15px; padding-top: 15px;">Purchase, sale and exchange of any kind (i.e. Transfer).</li>
-																													<li style="padding-left: 15px; padding-top: 15px;">Securities as defined under Public Debt Act 1994.</li>
-																													<li style="padding-left: 15px; padding-top: 15px;">Any overseas company owned by an NRI and the owner is 60% or more.</li>
+                                      Preparation of financial statements is one of the most crucial steps in accounting. Financial statements are the end product of the accounting system in any firm and they are tools for providing useful information to external users. The preparation includes income statement, statement of retained earnings, balance sheet and cash flow statement.
+                                      <br>
+                                      <br>
+                                      Income statement: Contains details on revenues, expenses, and the resulting net income. It depicts the overall profitability of a business for the time period in question. Also known as a profit and loss statement, income statement provides details the expenses for the time period and losses from any activity.
+                                      <br>
+                                      <br>
+                                      Statement of retained earnings: Covers the retained earnings at the beginning and end of the accounting period. Information required for preparing these reports include beginning retained earnings, obtained from the previous statement of retained earnings; net income, obtained from the income statement; and dividends paid during the accounting period.
+                                      <br>
+                                      <br>
+                                        <strong>Balance sheet:</strong> Offers details of the assets, liabilities, and shareholder equity of the company. It is prepared using balances of all asset accounts; balances of all liability accounts; capital stock balance; and retained earnings.
+                                        <br>
+                                        <br>
+                                        <strong>Cash flow statement:</strong> Explains the reasons for changes in the cash balance, and offers details about sources and uses of cash in the operating, financing, and investing activities of the enterprise.
 
-																												</ul>
-																												<br>
-																												<br>
-																												At Penny Worth Consultants, our team of professionals bring to you extensive first-hand experience from working on multiple national and transborder dealings involving diverse industries in different continents and jurisdictions. We offer profound and dedicated service for any FEMA related issues that encompass the entire gamut of foreign exchange law, ranging from consultancy to statutory compliances.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="modal" style="margin-top: 100px;" id="tab_default_16">
+                                <div class="tech__stack">
+                                    <div class="tech__stack-content">
+                                      <h3 class="mt0">Wealth Management</h3>
+                                      <p style=" text-align: justify; text-justify: inter-word;">
+                                        Wealth Creation is a difficult task which entails a lot of sweat and blood of each individual. We ensure that once created the wealth grows on its own and does not get diluted with poor investments. We offer a host of Wealth Management services including but not limited to:
+                                         <br>
+                                         </p><ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                                           <li style="padding-left: 15px; padding-top: 15px;">Financial Planning</li>
+                                           <li style="padding-left: 15px; padding-top: 15px;">Investment Advisory</li>
+                                           <li style="padding-left: 15px; padding-top: 15px;">Estate Planning</li>
+                                           <li style="padding-left: 15px; padding-top: 15px;">Investment Options identification and vetting</li>
+                                           <li style="padding-left: 15px; padding-top: 15px;">Business Sale Management</li>
+                                         </ul>
+                                      <p></p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="modal" style="margin-top: 100px;" id="tab_default_17">
+                                  <div class="tech__stack">
+                                      <div class="tech__stack-content">
+                                        <h3 class="mt0">Inbound &amp; Outbound Advisory &amp; FEMA Advisory Services</h3>
+                                        <p style=" text-align: justify; text-justify: inter-word;">
+                                          With the opening up of the world market on the back of global economic reforms, there has been a constant spur in foreign trade and investment between companies across countries. This increase in cross-border transactions involving both inbound and outbound investment makes it imperative for businesses to acquire expertise in business, tax and regulatory aspects of the country where the entity belongs and also of the country of the target company.
+                                          <br>
+                                          <br>
+                                          Complexities compound with the need to understand and ensure compliance with complex legislation covered under the Foreign Exchange Management Act (FEMA), which facilitates external trade and payments, and provides guidelines for the dealings of all foreign exchange transactions in India. FEMA is applicable to:
+                                          <br>
+                                          </p><ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                                            <li style="padding-left: 15px; padding-top: 15px;">Export &amp; Import of any commodity and/or service.</li>
+                                            <li style="padding-left: 15px; padding-top: 15px;">Foreign exchange.</li>
+                                            <li style="padding-left: 15px; padding-top: 15px;">Foreign security.</li>
+                                            <li style="padding-left: 15px; padding-top: 15px;">Banking, financial and insurance services.</li>
+                                            <li style="padding-left: 15px; padding-top: 15px;">Purchase, sale and exchange of any kind (i.e. Transfer).</li>
+                                            <li style="padding-left: 15px; padding-top: 15px;">Securities as defined under Public Debt Act 1994.</li>
+                                            <li style="padding-left: 15px; padding-top: 15px;">Any overseas company owned by an NRI and the owner is 60% or more.</li>
+
+                                          </ul>
+                                          <br>
+                                          <br>
+                                          At Penny Worth Consultants, our team of professionals bring to you extensive first-hand experience from working on multiple national and transborder dealings involving diverse industries in different continents and jurisdictions. We offer profound and dedicated service for any FEMA related issues that encompass the entire gamut of foreign exchange law, ranging from consultancy to statutory compliances.
 <br>
 <br>
 We provide expert guidance with inbound and outbound investment strategies maximizing structuring for investment into a particular jurisdiction. We hold expertise in strategic, financial and legal guidance in all aspects of inbound acquisition. The scope of services include advices on compliance any other special government regulations specific to the country of the foreign company.
@@ -1391,31 +1413,31 @@ We provide expert guidance with inbound and outbound investment strategies maxim
 For outbound investment, expert assistance is provided in staying fully aware of any restrictions or obstacles in the conduct of due diligence, specific reporting requirements or other relevant regulation on pre-merger interactions and post-merger implementations.
 <br>
 <br>
-Highlights of our inbound & outbound advisory & FEMA advisory services include:
+Highlights of our inbound &amp; outbound advisory &amp; FEMA advisory services include:
 <ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-	<li style="padding-left: 15px; padding-top: 15px;">Obtain approvals with various requirements of FEMA.</li>
-	<li style="padding-left: 15px; padding-top: 15px;">Assistance in regular FEMA compliances as per statutory provisions like filing of Form/Returns etc</li>
-	<li style="padding-left: 15px; padding-top: 15px;">Advisory on Outbound Structuring as the choice of appropriate jurisdiction, structuring of investment etc.</li>
-	<li style="padding-left: 15px; padding-top: 15px;">Advisory on inbound structuring and advising on the nature and structure of the business entity as a Liaison office, Branch office, Joint venture, wholly owned, subsidiary etc.</li>
-	<li style="padding-left: 15px; padding-top: 15px;">Support in setting up or purchase of an existing entity.</li>
-	<li style="padding-left: 15px; padding-top: 15px;">Assistance in obtaining approval from FIPB, Ministry of Finance and help in the preparation of the foreign collaboration agreements.</li>
-	<li style="padding-left: 15px; padding-top: 15px;">Help in change/ exit in existing Business model.</li>
+<li style="padding-left: 15px; padding-top: 15px;">Obtain approvals with various requirements of FEMA.</li>
+<li style="padding-left: 15px; padding-top: 15px;">Assistance in regular FEMA compliances as per statutory provisions like filing of Form/Returns etc</li>
+<li style="padding-left: 15px; padding-top: 15px;">Advisory on Outbound Structuring as the choice of appropriate jurisdiction, structuring of investment etc.</li>
+<li style="padding-left: 15px; padding-top: 15px;">Advisory on inbound structuring and advising on the nature and structure of the business entity as a Liaison office, Branch office, Joint venture, wholly owned, subsidiary etc.</li>
+<li style="padding-left: 15px; padding-top: 15px;">Support in setting up or purchase of an existing entity.</li>
+<li style="padding-left: 15px; padding-top: 15px;">Assistance in obtaining approval from FIPB, Ministry of Finance and help in the preparation of the foreign collaboration agreements.</li>
+<li style="padding-left: 15px; padding-top: 15px;">Help in change/ exit in existing Business model.</li>
 </ul>
 <br>
 <br>
-We are committed to deliver the best services we provide to meet your regulatory and compliance requirements with regards to inbound & outbound and FEMA. We are dedicated to what we do and hence delivering what we promise is the goal at Penny Worth Consultants.
+We are committed to deliver the best services we provide to meet your regulatory and compliance requirements with regards to inbound &amp; outbound and FEMA. We are dedicated to what we do and hence delivering what we promise is the goal at Penny Worth Consultants.
 
-																											</p>
-																											</div>
-																											</div>
-																											</div>
+                                        <p></p>
+                                        </div>
+                                        </div>
+                                        </div>
 
-																											<div class="tab-pane" id="tab_default_18">
-																												<div class="tech__stack">
-																														<div class="tech__stack-content">
-																															<h3 class="mt0">Corporate Restructuring</h3>
-																															<p style=" text-align: justify; text-justify: inter-word;">
-																																India has recently become one of the most lucrative yet challenging places in the world in which to do business. In the wake of the introduction of new regulations and modifications of the existing ones, businesses are going for corporate restructuring to stay compliant with changing regulations alongside achieving the effective business outcomes. In such a situation, it has become imperative for the business owners and managers to formulate an end to end solution to ensure profitable business sustainability.
+                                        <div class="modal" style="margin-top: 100px;" id="tab_default_18">
+                                          <div class="tech__stack">
+                                              <div class="tech__stack-content">
+                                                <h3 class="mt0">Corporate Restructuring</h3>
+                                                <p style=" text-align: justify; text-justify: inter-word;">
+                                                  India has recently become one of the most lucrative yet challenging places in the world in which to do business. In the wake of the introduction of new regulations and modifications of the existing ones, businesses are going for corporate restructuring to stay compliant with changing regulations alongside achieving the effective business outcomes. In such a situation, it has become imperative for the business owners and managers to formulate an end to end solution to ensure profitable business sustainability.
 <br>
 <br>
 At Penny Worth Consultants, we apply in-depth knowledge and valuable foresight to help business reach desired goals. We work collaboratively with business of all sizes and nature to understand their exact requirement and offer expert advice on the restructuring approach that would be most suitable. We evaluate all possible options of corporate restructuring, analyze them from the perspective of all stakeholders, evaluate tax implications and suggest suitable options, and contribute to sound decision making.
@@ -1423,175 +1445,169 @@ At Penny Worth Consultants, we apply in-depth knowledge and valuable foresight t
 <br>
 We hold expertise in the ever evolving tax and regulatory landscape and are renowned for providing sustainable solutions for our clients. We provide complete implementation of the restructuring plan. Our bouquet of services include from the very basics to the most intricate ones – from drafting / reviewing suitable documentation to obtaining stock exchange approvals to stamp duty adjudication etc.
 
-																															</p>
-																															</div>
-																															</div>
-																															</div>
+                                                </p>
+                                                </div>
+                                                </div>
+                                                </div>
 
-																															<div class="tab-pane" id="tab_default_19">
-																																<div class="tech__stack">
-																																		<div class="tech__stack-content">
-																																			<h3 class="mt0">Succession Planning</h3>
-																																			<p style=" text-align: justify; text-justify: inter-word;">
-																																				The landscape of the Indian business is highly governed by family owned businesses. Most of these businesses continue to flourish to the next generation, while others scramble for success. It happens due to the fact that as companies move through various stages in their life cycle and build growth strategies to deal with changing business environments, the issue of leadership becomes critical and with it, the related issue of succession.
-																																				<br>
-																																				<br>
-																																				And while the dynamics may differ between companies, a succession strategy essentially needs to look ahead and plan appropriately to ensure that there is continuity and the right kind of leadership in the business, both at executive and board level.
-																																				<br>
-																																				<br>
-																																				At Penny Worth Consultants, we can help you, your family, your employees and all other stakeholders prepare for the healthy, productive, and smooth transition of your business keeping in mind the full range of tax, estate planning and operational issues involved. We help families examine and evaluate options and consider how to structure a transaction that meets everyone’s needs. We offer experienced wealth advisors with a long history of skilled business planning advice to firms in almost every industry.
-																																				<br>
-																																				<br>
-																																				Our succession planning services cover all key areas including:
-																																				<br>
-																																				<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																																					<li style="padding-left: 15px; padding-top: 15px;">The preparation</li>
-																																					<li style="padding-left: 15px; padding-top: 15px;">Selling your business</li>
-																																					<li style="padding-left: 15px; padding-top: 15px;">Succession strategy</li>
-																																					<li style="padding-left: 15px; padding-top: 15px;">Choosing your successors</li>
-																																					<li style="padding-left: 15px; padding-top: 15px;">Smooth transition</li>
-																																				</ul>
-																																				<br>
+                                                <div class="modal" style="margin-top: 100px;" id="tab_default_19">
+                                                  <div class="tech__stack">
+                                                      <div class="tech__stack-content">
+                                                        <h3 class="mt0">Succession Planning</h3>
+                                                        <p style=" text-align: justify; text-justify: inter-word;">
+                                                          The landscape of the Indian business is highly governed by family owned businesses. Most of these businesses continue to flourish to the next generation, while others scramble for success. It happens due to the fact that as companies move through various stages in their life cycle and build growth strategies to deal with changing business environments, the issue of leadership becomes critical and with it, the related issue of succession.
+                                                          <br>
+                                                          <br>
+                                                          And while the dynamics may differ between companies, a succession strategy essentially needs to look ahead and plan appropriately to ensure that there is continuity and the right kind of leadership in the business, both at executive and board level.
+                                                          <br>
+                                                          <br>
+                                                          At Penny Worth Consultants, we can help you, your family, your employees and all other stakeholders prepare for the healthy, productive, and smooth transition of your business keeping in mind the full range of tax, estate planning and operational issues involved. We help families examine and evaluate options and consider how to structure a transaction that meets everyone’s needs. We offer experienced wealth advisors with a long history of skilled business planning advice to firms in almost every industry.
+                                                          <br>
+                                                          <br>
+                                                          Our succession planning services cover all key areas including:
+                                                          <br>
+                                                          </p><ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                                                            <li style="padding-left: 15px; padding-top: 15px;">The preparation</li>
+                                                            <li style="padding-left: 15px; padding-top: 15px;">Selling your business</li>
+                                                            <li style="padding-left: 15px; padding-top: 15px;">Succession strategy</li>
+                                                            <li style="padding-left: 15px; padding-top: 15px;">Choosing your successors</li>
+                                                            <li style="padding-left: 15px; padding-top: 15px;">Smooth transition</li>
+                                                          </ul>
+                                                          <br>
 
-																																				We help develop a long-term succession strategy and coordinate planning sessions with all those who matter to ensure all matters relating to your succession will suit your best interests. We also offer assistance in assessing and grooming potential leadership candidates. We ensure that the transition is smooth by taking care of all related issues.
+                                                          We help develop a long-term succession strategy and coordinate planning sessions with all those who matter to ensure all matters relating to your succession will suit your best interests. We also offer assistance in assessing and grooming potential leadership candidates. We ensure that the transition is smooth by taking care of all related issues.
 <br>
 <br>You’ve toiled hard to build your company. We will work just as hard to help it keep it moving forward.
 
-																																			</p>
-																																			</div>
-																																			</div>
-																																			</div>
+                                                        <p></p>
+                                                        </div>
+                                                        </div>
+                                                        </div>
 
 
-																																			<div class="tab-pane" id="tab_default_20">
-																																				<div class="tech__stack">
-																																						<div class="tech__stack-content">
-																																							<h3 class="mt0">Corporate and International Taxation</h3>
-																																							<p style=" text-align: justify; text-justify: inter-word;">
-																																								With growth in the global economy, foreign multinational companies are reaping benefits by investing in India, while Indian business houses are expanding beyond national boundaries to invest in other countries. At the same time, the Indian Government is introducing new regulations to expand the tax base and the international laws are becoming more complex due to the changing domestic laws in various parts of the world.
-																																								<br>
-																																								<br>
-																																								In such a scenario, to keep pace with the constantly changing global & local economic landscape, businesses need to reinvent and readjust in all the critical aspects that affect growth. This includes optimizing cost efficiency with regard to tax, corporate and international both.
-																																								<br>
-																																								<br>
-																																								We work closely with our clients and formulate robust strategies to ensure cost optimization in cross border M&A. We provide tax solutions to your cross border transactions and assist in a tax due diligence exercise as an acquirer or a disposer.
-																																								<br>
-																																								<br>
-																																								Our integrated team of experts helps you throughout the transaction life-cycle across all sub-solutions. The team leverages on global ideas and local best practices to deliver value to your business. Members of the elite team of tax professionals specialize in due diligence on mergers and acquisitions to identify any inherent tax risks and opportunities and work towards achieving optimum tax efficiencies.
+                                                        <div class="modal" style="margin-top: 100px;" id="tab_default_20">
+                                                          <div class="tech__stack">
+                                                              <div class="tech__stack-content">
+                                                                <h3 class="mt0">Corporate and International Taxation</h3>
+                                                                <p style=" text-align: justify; text-justify: inter-word;">
+                                                                  With growth in the global economy, foreign multinational companies are reaping benefits by investing in India, while Indian business houses are expanding beyond national boundaries to invest in other countries. At the same time, the Indian Government is introducing new regulations to expand the tax base and the international laws are becoming more complex due to the changing domestic laws in various parts of the world.
+                                                                  <br>
+                                                                  <br>
+                                                                  In such a scenario, to keep pace with the constantly changing global &amp; local economic landscape, businesses need to reinvent and readjust in all the critical aspects that affect growth. This includes optimizing cost efficiency with regard to tax, corporate and international both.
+                                                                  <br>
+                                                                  <br>
+                                                                  We work closely with our clients and formulate robust strategies to ensure cost optimization in cross border M&amp;A. We provide tax solutions to your cross border transactions and assist in a tax due diligence exercise as an acquirer or a disposer.
+                                                                  <br>
+                                                                  <br>
+                                                                  Our integrated team of experts helps you throughout the transaction life-cycle across all sub-solutions. The team leverages on global ideas and local best practices to deliver value to your business. Members of the elite team of tax professionals specialize in due diligence on mergers and acquisitions to identify any inherent tax risks and opportunities and work towards achieving optimum tax efficiencies.
 
-																																							</p>
-																																							</div>
-																																							</div>
-																																							</div>
+                                                                </p>
+                                                                </div>
+                                                                </div>
+                                                                </div>
 
-																																							<div class="tab-pane" id="tab_default_21">
-																																								<div class="tech__stack">
-																																										<div class="tech__stack-content">
-																																											<h3 class="mt0">Transfer Pricing </h3>
-																																											<p style=" text-align: justify; text-justify: inter-word;">
-																																												Modern businesses are always in look out for opportunities to grow through expansions, joint ventures and M&A, and authorities are keeping an eagle’s eye on the increased number of inter-company and cross border deals. Authorities are coming up with stringent legislation and documentation requirements to ensure compliance.
-																																												<br>
-																																												<br>
-																																												Amidst all this and constantly changing business environment, companies are required to formulate a stable transfer pricing policy. While a carefully exercised transfer pricing allows to effectively manage risks, improves overall performance and paves the way for sustainable growth, businesses find it very difficult to comply with all the requirements due to the complex and time-consuming nature of the process.
+                                                                <div class="modal" style="margin-top: 100px;" id="tab_default_21">
+                                                                  <div class="tech__stack">
+                                                                      <div class="tech__stack-content">
+                                                                        <h3 class="mt0">Transfer Pricing </h3>
+                                                                        <p style=" text-align: justify; text-justify: inter-word;">
+                                                                          Modern businesses are always in look out for opportunities to grow through expansions, joint ventures and M&amp;A, and authorities are keeping an eagle’s eye on the increased number of inter-company and cross border deals. Authorities are coming up with stringent legislation and documentation requirements to ensure compliance.
+                                                                          <br>
+                                                                          <br>
+                                                                          Amidst all this and constantly changing business environment, companies are required to formulate a stable transfer pricing policy. While a carefully exercised transfer pricing allows to effectively manage risks, improves overall performance and paves the way for sustainable growth, businesses find it very difficult to comply with all the requirements due to the complex and time-consuming nature of the process.
 
-																																												<br>
-																																												<br>
-																																												At Penny Worth Consultants, we provide timely and efficient transfer pricing services keeping in consideration the prevalent international practice as well as the unique needs different businesses. In transfer pricing services we formulate business models based on tax efficiency, and provide tax audit assistance.
-																																												<br>
-																																												<br>
-																																												Further, we offer adequate support in application, documentation and compliance and do intellectual property planning. Our team works closely with you and drafts transfer pricing documentation based on prescribed guidelines, and offers restructuring and dispute resolution proposals.
+                                                                          <br>
+                                                                          <br>
+                                                                          At Penny Worth Consultants, we provide timely and efficient transfer pricing services keeping in consideration the prevalent international practice as well as the unique needs different businesses. In transfer pricing services we formulate business models based on tax efficiency, and provide tax audit assistance.
+                                                                          <br>
+                                                                          <br>
+                                                                          Further, we offer adequate support in application, documentation and compliance and do intellectual property planning. Our team works closely with you and drafts transfer pricing documentation based on prescribed guidelines, and offers restructuring and dispute resolution proposals.
 
-																																											</p>
-																																											</div>
-																																											</div>
-																																											</div>
-
-
-																																											<div class="tab-pane" id="tab_default_22">
-																																												<div class="tech__stack">
-																																														<div class="tech__stack-content">
-																																															<h3 class="mt0">Due Diligence</h3>
-																																															<p style=" text-align: justify; text-justify: inter-word;">
-																																																Acquisitions, Mergers, Investments and stake sales are the order of business growth in today’s world. Thus, an exercise of vetting the company, product, technology or market with extreme caution is an essential and imperative exercise. We at Penny Worth Consultants have an expertise in such due diligence assignments ensuring that the investment or the new partnership being explored are worth every penny being invested into.
-																																																<br>
-																																																<br>
-																																																How we can help:
-																																																<br>
-																																																<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																																																	<li style="padding-left: 15px; padding-top: 15px;">We conduct due diligences with an objective to deliver valuable due diligence reports and business analyses for our clients, that offer insights for the decision-making and negotiation processes. We offer a confidential, sound, unbiased perspective and are the ideal complement to client’s internal resources</li>
-																																																	<li style="padding-left: 15px; padding-top: 15px;">To focus on providing value-added services that enhances client business decisions by combining a thorough understanding of technologies, logistics, corporate strategy and finance with an ability to summarize complex issues into concise, easily understood terms</li>
-																																																</ul>
-																																																<br>
-																																															</p>
-
-																																															<p style=" text-align: justify; text-justify: inter-word;">
-
-																																																<strong> Financial due diligence:</strong>
-																																																<br>
-																																																Our role in a financial due diligence review involves evaluating the proposed deal by analyzing the present and historical financial statements including important agreements reviewing the control environment and assessing the risk incidental to the business
-																																																<br>
-																																																<br>
-																																																<strong>Tax due diligence:</strong>
-																																																<br>
-																																																When companies acquire a business, dispose of a non-core business or go into a merger, they need to manage the tax risk by means of a tax due diligence. We provide you with corporate tax, social security and direct and indirect taxes due diligence while focusing on risks (including quantifications) as well as opportunities
-																																																<br>
-																																																<br>
-																																																<strong>Legal due diligence:</strong>
-																																																<br>
-																																																In an M&A process, any responsible management will require a comprehensive assessment of the possible legal risks related to the corporate status, assets, contracts, securities, intellectual property, etc. of the target company concerned. The negotiation of the transaction will in most cases require the intervention of a legal expert as numerous legal pitfalls need to be tackled as early as at the negotiation table. The drafting of the transaction contracts and related documents cannot be done without the special attention from a business angle.
-																																																<br>
-																																																We perform a full legal due diligence resulting in an assessment of the main risks and provide potential solutions that reduce the risk and provide assistance in drafting the letter of intent/confidentiality and exclusivity agreements / share purchase agreement/share subscription agreement, representations and warranties, etc.
-																																																<br>
-																																																<br>
-																																																<strong>Our due diligence review deliverables</strong>
-																																																<br>
-																																																We aim to clearly bring out, in our due diligence review reports, the outcome of the engagement supported by findings in each area along with adjustments proposed to achieve the objectives of the engagement.
+                                                                        </p>
+                                                                        </div>
+                                                                        </div>
+                                                                        </div>
 
 
-																																															</p>
-																																															</div>
-																																															</div>
-																																															</div>
+                                                                        <div class="modal" style="margin-top: 100px;" id="tab_default_22">
+                                                                          <div class="tech__stack">
+                                                                              <div class="tech__stack-content">
+                                                                                <h3 class="mt0">Due Diligence</h3>
+                                                                                <p style=" text-align: justify; text-justify: inter-word;">
+                                                                                  Acquisitions, Mergers, Investments and stake sales are the order of business growth in today’s world. Thus, an exercise of vetting the company, product, technology or market with extreme caution is an essential and imperative exercise. We at Penny Worth Consultants have an expertise in such due diligence assignments ensuring that the investment or the new partnership being explored are worth every penny being invested into.
+                                                                                  <br>
+                                                                                  <br>
+                                                                                  How we can help:
+                                                                                  <br>
+                                                                                  </p><ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                                                                                    <li style="padding-left: 15px; padding-top: 15px;">We conduct due diligences with an objective to deliver valuable due diligence reports and business analyses for our clients, that offer insights for the decision-making and negotiation processes. We offer a confidential, sound, unbiased perspective and are the ideal complement to client’s internal resources</li>
+                                                                                    <li style="padding-left: 15px; padding-top: 15px;">To focus on providing value-added services that enhances client business decisions by combining a thorough understanding of technologies, logistics, corporate strategy and finance with an ability to summarize complex issues into concise, easily understood terms</li>
+                                                                                  </ul>
+                                                                                  <br>
+                                                                                <p></p>
 
-																																															<div class="tab-pane" id="tab_default_23">
-																																																<div class="tech__stack">
-																																																		<div class="tech__stack-content">
-																																																			<h3 class="mt0">Contract Drafting Services </h3>
-																																																			<p style=" text-align: justify; text-justify: inter-word;">
-																																																				Modern businesses and transactions are ever evolving and governed by a dynamic financial environment. Hence, drafting and entering into a contract for such transactions with clearly spelled out terms and conditions is a mandate to ensure that the interest of every party is adequately safeguarded. The same is required to be done professionally to ensure that all kinds of situations are foreseen, the agreement clearly spells out the terms and is understood in the requisite manner irrespective of who interprets the same. We ensure that our contracts give you stronger protection and greater advantage.
-																																																				<br>
-																																																				<br>
-																																																				Kinds of contracts executed by us:
-																																																				<br>
-																																																				<ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
-																																																					<li style="padding-left: 15px; padding-top: 15px;">Employment Contracts</li>
-																																																					<li style="padding-left: 15px; padding-top: 15px;">Shareholder Contracts</li>
-																																																					<li style="padding-left: 15px; padding-top: 15px;">Wills</li>
-																																																					<li style="padding-left: 15px; padding-top: 15px;">Master Purchase and Sale Agreements</li>
-																																																					<li style="padding-left: 15px; padding-top: 15px;">Consultancy and Service Agreements</li>
-																																																					<li style="padding-left: 15px; padding-top: 15px;">Settlement Agreements</li>
-																																																					<li style="padding-left: 15px; padding-top: 15px;">Leasing Arrangements</li>
-																																																					<li style="padding-left: 15px; padding-top: 15px;">Loan Agreements</li>
-																																																					<li style="padding-left: 15px; padding-top: 15px;">Indemnity Agreements</li>
+                                                                                <p style=" text-align: justify; text-justify: inter-word;">
 
-																																																					<li style="padding-left: 15px; padding-top: 15px;">Joint Venture Agreements</li>
-																																																					<li style="padding-left: 15px; padding-top: 15px;">Partnership Agreements</li>
-																																																					<li style="padding-left: 15px; padding-top: 15px;">Employment Agreements</li>
-																																																					<li style="padding-left: 15px; padding-top: 15px;">Property Agreements</li>
-																																																					<li style="padding-left: 15px; padding-top: 15px;">Licensing Agreements</li>																																																					
-																																																				</ul>
+                                                                                  <strong> Financial due diligence:</strong>
+                                                                                  <br>
+                                                                                  Our role in a financial due diligence review involves evaluating the proposed deal by analyzing the present and historical financial statements including important agreements reviewing the control environment and assessing the risk incidental to the business
+                                                                                  <br>
+                                                                                  <br>
+                                                                                  <strong>Tax due diligence:</strong>
+                                                                                  <br>
+                                                                                  When companies acquire a business, dispose of a non-core business or go into a merger, they need to manage the tax risk by means of a tax due diligence. We provide you with corporate tax, social security and direct and indirect taxes due diligence while focusing on risks (including quantifications) as well as opportunities
+                                                                                  <br>
+                                                                                  <br>
+                                                                                  <strong>Legal due diligence:</strong>
+                                                                                  <br>
+                                                                                  In an M&amp;A process, any responsible management will require a comprehensive assessment of the possible legal risks related to the corporate status, assets, contracts, securities, intellectual property, etc. of the target company concerned. The negotiation of the transaction will in most cases require the intervention of a legal expert as numerous legal pitfalls need to be tackled as early as at the negotiation table. The drafting of the transaction contracts and related documents cannot be done without the special attention from a business angle.
+                                                                                  <br>
+                                                                                  We perform a full legal due diligence resulting in an assessment of the main risks and provide potential solutions that reduce the risk and provide assistance in drafting the letter of intent/confidentiality and exclusivity agreements / share purchase agreement/share subscription agreement, representations and warranties, etc.
+                                                                                  <br>
+                                                                                  <br>
+                                                                                  <strong>Our due diligence review deliverables</strong>
+                                                                                  <br>
+                                                                                  We aim to clearly bring out, in our due diligence review reports, the outcome of the engagement supported by findings in each area along with adjustments proposed to achieve the objectives of the engagement.
 
-																																																			</p>
-																																																			</div>
-																																																			</div>
-																																																			</div>
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+                                                                                </p>
+                                                                                </div>
+                                                                                </div>
+                                                                                </div>
+
+                                                                                <div class="modal" style="margin-top: 100px;" id="tab_default_23">
+                                                                                  <div class="tech__stack">
+                                                                                      <div class="tech__stack-content">
+                                                                                        <h3 class="mt0">Contract Drafting Services </h3>
+                                                                                        <p style=" text-align: justify; text-justify: inter-word;">
+                                                                                          Modern businesses and transactions are ever evolving and governed by a dynamic financial environment. Hence, drafting and entering into a contract for such transactions with clearly spelled out terms and conditions is a mandate to ensure that the interest of every party is adequately safeguarded. The same is required to be done professionally to ensure that all kinds of situations are foreseen, the agreement clearly spells out the terms and is understood in the requisite manner irrespective of who interprets the same. We ensure that our contracts give you stronger protection and greater advantage.
+                                                                                          <br>
+                                                                                          <br>
+                                                                                          Kinds of contracts executed by us:
+                                                                                          <br>
+                                                                                          </p><ul style="list-style:disc; text-align: justify; text-justify: inter-word;">
+                                                                                            <li style="padding-left: 15px; padding-top: 15px;">Employment Contracts</li>
+                                                                                            <li style="padding-left: 15px; padding-top: 15px;">Shareholder Contracts</li>
+                                                                                            <li style="padding-left: 15px; padding-top: 15px;">Wills</li>
+                                                                                            <li style="padding-left: 15px; padding-top: 15px;">Master Purchase and Sale Agreements</li>
+                                                                                            <li style="padding-left: 15px; padding-top: 15px;">Consultancy and Service Agreements</li>
+                                                                                            <li style="padding-left: 15px; padding-top: 15px;">Settlement Agreements</li>
+                                                                                            <li style="padding-left: 15px; padding-top: 15px;">Leasing Arrangements</li>
+                                                                                            <li style="padding-left: 15px; padding-top: 15px;">Loan Agreements</li>
+                                                                                            <li style="padding-left: 15px; padding-top: 15px;">Indemnity Agreements</li>
+
+                                                                                            <li style="padding-left: 15px; padding-top: 15px;">Joint Venture Agreements</li>
+                                                                                            <li style="padding-left: 15px; padding-top: 15px;">Partnership Agreements</li>
+                                                                                            <li style="padding-left: 15px; padding-top: 15px;">Employment Agreements</li>
+                                                                                            <li style="padding-left: 15px; padding-top: 15px;">Property Agreements</li>
+                                                                                            <li style="padding-left: 15px; padding-top: 15px;">Licensing Agreements</li>																																																					
+                                                                                          </ul>
+
+                                                                                        <p></p>
+                                                                                        </div>
+                                                                                        </div>
+                                                                                        </div>
+
 
 
 
@@ -1649,6 +1665,9 @@ $(document).ready(function(){
 <script type='text/javascript' src='wp-content/plugins/simplified-social-share/oss-social-sharing/assets/js/oss_share6619.js?ver=5.2.5'></script>
 <script type='text/javascript' src='https://sharecdn.social9.com/v2/js/opensocialsharedefaulttheme.js?ver=5.2.5'></script>
 <script type='text/javascript' src='https://sharecdn.social9.com/v2/js/opensocialshare.js?ver=5.2.5'></script>
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 <script type="text/javascript">
 	jQuery('.img-svg').each(function(){
 	    var $img = jQuery(this);
