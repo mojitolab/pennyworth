@@ -407,6 +407,7 @@ button.ps-btn-bordered{
     max-width: 1000px !important;
     background-color: #eff5f5 !important;
 }
+.modal-backdrop {display: none !important;}
 </style>
 </head>
 <body class="home page-template page-template-pages page-template-home page-template-pageshome-php page page-id-6" style="overflow-x: hidden;">
@@ -545,9 +546,9 @@ color: white;">
 
 
 <div class="row ">
-		    <div class="col-sm-12">
+		    <!-- <div class="col-sm-12">
 		      <img style="width:100%" src="wp-content/themes/imenso/images/ezgif.gif">  
-		    </div>
+		    </div> -->
 			<div class="col-sm-12"   id="services">
 				<div class="text-center heading_h1" style="color:#ee2761;">Services</div>
 			</div>
@@ -1739,7 +1740,7 @@ We understand that each business, enterprise or organization has uniqueness and 
 			<div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/Quack-Quack.jpg"></div>
 			<div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/Qwik.jpg"></div>
 			<div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/Salasar-Balaji-Agro.jpg"></div>
-			<div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/LeoandMike.png"></div>
+			<!-- <div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/LeoandMike.png"></div> -->
 			<div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/Shree-Shubham-Jewellers.png"></div>
 			<div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/Subway.png"></div>
 			<div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/Sudrania.png"></div>
@@ -1852,6 +1853,38 @@ Every business is different. Our focus is on understanding individual business n
 					<a href="mailto:info@pennyworthconsultants.com"><span class="mild">Email:</span> &nbsp;&nbsp;info@pennyworthconsultants.com</a>
 				</p>
 
+         <!-- social media share links -->
+         <style>
+          #social-share {
+    font-size: 20px;
+}
+         #social-share a {
+    padding: 5px;
+}
+
+
+#social-share .fa:hover {
+    opacity: 0.7;
+}
+
+#social-share .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+#social-share .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+#social-share .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+        </style>
+        <p id="social-share"><a href="https://www.facebook.com/pennyworthconsultants" class="fa fa-facebook"></a>
+          <a href="https://www.linkedin.com/company/pennyworthconsultant" class="fa fa-linkedin"></a>
+          <a href="https://twitter.com/PennyWorthLLP" class="fa fa-twitter"></a></p>
 
 			</div>
 
@@ -1933,6 +1966,43 @@ $(document).ready(function(){
   });
   
 </script>
+<style>
+      
+  /* .ColorSwatch::after {
+border: 1px solid #dedede;
+} */
+  
+  
+  
+  .float{
+position:fixed;
+width:60px;
+height:60px;
+bottom:80px;
+right:40px;
+background-color:#25d366;
+color:#FFF;
+border-radius:50px;
+text-align:center;
+font-size:30px;
+box-shadow: 2px 2px 3px #999;
+z-index:100;
+}
+
+.my-float{
+margin-top:16px;
+}
+ 
+</style>
+
+<div id="whats-app">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/919398026431" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+</div>
+
+
 </body>
 
 <!-- Mirrored from www.imensosoftware.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Apr 2020 21:23:51 GMT -->

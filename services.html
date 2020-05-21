@@ -408,7 +408,7 @@ button.ps-btn-bordered{
     max-width: 1000px !important;
     background-color: #eff5f5 !important;
 }
-
+.modal-backdrop {display: none !important;}
 </style>
 </head>
 <body class="home page-template page-template-pages page-template-home page-template-pageshome-php page page-id-6" style="overflow-x: hidden;">
@@ -456,16 +456,54 @@ color: white;">
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right" id="nav_bar">
-
+          <li><a href="services.html">Services</a></li>
           <li><a href="index.html#aboutus">About Us</a></li>
 					<li><a href="index.html#client">Clients</a></li>
            <li><a href="index.html#whyus">Why Us</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li class="extra-right"><button class="ps-btn-bordered" data-toggle="modal" data-target="#contactModal">Quote</button></li>
+           <li><a href="index.html#philosophy">Philosophy</a></li>
+           <li class="extra-right"><button class="ps-btn-bordered" data-toggle="modal" data-target="#contactModal">Contact Us</button></li>
         </ul>
       </div>
     </div>
   </nav>
+	<!--Contact Form Modal-->
+
+	<div class="modal fade  come-from-modal right" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">Drop us a message</h4>
+            </div>
+            <div class="modal-body">
+              <form method="post">
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
 
@@ -498,8 +536,8 @@ color: white;">
 			</div>
 			<div class="col-sm-12 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
 				<div class="big-para text-center" style="margin-top: 0;">Innovative Solutions for your business.
-					
-					
+					<br>
+					<p>We believe in customized solutions for our clients and hence have a pandora's box of services to ensure that we can cater to each and every requirement of our clients. We also ensure that our clients have to coordinate with one single source for all their accounting, taxation, and financial requirements thus ensuring a jump in efficiency and improvement in compliance. Here is a list of services we do to ensure that your business is equipped in all scenarios.</p>
 					<!-- <button class="btn"><a href="services.html">Know More</a></button><br><br> -->
 
 				</div>
@@ -626,18 +664,24 @@ color: white;">
 <span class="tech_nm">Corporate and International Taxation</span> </a>
    </div>
 </li>
-<!-- <li class="col-sm-3">-->
-<!--  <a href="#tab_default_21" rel="modal:open">-->
-<!--  <span class="tech_nm">Transfer Pricing</span> </a>-->
-<!--</li>-->
-<!--<li class="col-sm-3">-->
-<!-- <a href="#tab_default_22" rel="modal:open">-->
-<!-- <span class="tech_nm">Due Diligence</span> </a>-->
-<!--</li>-->
-<!--<li class="col-sm-3">-->
-<!-- <a href="#tab_default_23" rel="modal:open">-->
-<!-- <span class="tech_nm">Contract Drafting Services</span> </a>-->
-<!--</li>-->
+<li class="col-sm-3">
+  <div>
+ <a href="#tab_default_21" rel="modal:open">
+ <span class="tech_nm">Transfer Pricing</span> </a>
+</div>
+</li>
+<li class="col-sm-3">
+  <div>
+<a href="#tab_default_22" rel="modal:open">
+<span class="tech_nm">Due Diligence</span> </a>
+</div>
+</li>
+<li class="col-sm-3">
+  <div>
+<a href="#tab_default_23" rel="modal:open">
+<span class="tech_nm">Contract Drafting Services</span> </a>
+</div>
+</li>
 </ul>
 
 <div class="modal" style="margin-top: 100px;" id="tab_default_1">
@@ -1621,7 +1665,39 @@ We hold expertise in the ever evolving tax and regulatory landscape and are reno
 				<p>
 					#214, Paras Chambers, 3-5-890,  <br />Opp. Hyderabad Stock Exchange, <br>Himayat Nagar, Hyderabad - 500 029<br>	Phone: &nbsp;&nbsp;+91-93980 26431<br>
 					<a href="mailto:info@pennyworthconsultants.com"><span class="mild">Email:</span> &nbsp;&nbsp;info@pennyworthconsultants.com</a>
-				</p>
+        </p>
+        <!-- social media share links -->
+        <style>
+          #social-share {
+    font-size: 20px;
+}
+         #social-share a {
+    padding: 5px;
+}
+
+
+#social-share .fa:hover {
+    opacity: 0.7;
+}
+
+#social-share .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+#social-share .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+#social-share .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+        </style>
+        <p id="social-share"><a href="https://www.facebook.com/pennyworthconsultants" class="fa fa-facebook"></a>
+          <a href="https://www.linkedin.com/company/pennyworthconsultant" class="fa fa-linkedin"></a>
+          <a href="https://twitter.com/PennyWorthLLP" class="fa fa-twitter"></a></p>
 
 
 			</div>
@@ -1703,6 +1779,43 @@ $(document).ready(function(){
 
 	});
 </script>
+
+<style>
+      
+  /* .ColorSwatch::after {
+border: 1px solid #dedede;
+} */
+  
+  
+  
+  .float{
+position:fixed;
+width:60px;
+height:60px;
+bottom:80px;
+right:40px;
+background-color:#25d366;
+color:#FFF;
+border-radius:50px;
+text-align:center;
+font-size:30px;
+box-shadow: 2px 2px 3px #999;
+z-index:100;
+}
+
+.my-float{
+margin-top:16px;
+}
+ 
+</style>
+
+<div id="whats-app">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/919398026431" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+</div>
+
 </body>
 
 <!-- Mirrored from www.imensosoftware.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Apr 2020 21:23:51 GMT -->
