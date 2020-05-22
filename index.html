@@ -462,7 +462,7 @@ color: white;">
            <li><a href="#whyus">Why Us</a></li>
            <li><a href="#philosophy">Philosophy</a></li>
 					
-					<li class="extra-right"><button class="ps-btn-bordered" data-toggle="modal" data-target="#contactModal">Contact Us</button></li>
+					<!-- <li class="extra-right"><button class="ps-btn-bordered" data-toggle="modal" data-target="#contactModal">Contact Us</button></li> -->
         </ul>
       </div>
     </div>
@@ -537,11 +537,15 @@ color: white;">
     padding: 20px;
     font-weight: bold;
     /* background: rgba(0,0,200,0.5); */
-    margin: 10px 0;
+    /* margin: 10px 0; */
     color: #fff;
     text-align: center;
 }
-    
+    @media(max-width: 767px){
+      .service li {
+    padding: 10px 20px;
+    }
+    }
     </style>
 
 
@@ -1733,7 +1737,7 @@ We understand that each business, enterprise or organization has uniqueness and 
       <div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/Foyr.png"></div>
       <div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/kashish.jpeg"></div>
       <div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/La-Belle.png"></div>
-      <!--<div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/LeoandMike.png"></div>-->
+      <div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/LeoandMike.png"></div>
       <div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/Makers-milkshake.jpg"></div>
 			<div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/Massimo.png"></div>
 			<div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/Mod-Veda.png"></div>
@@ -1748,7 +1752,7 @@ We understand that each business, enterprise or organization has uniqueness and 
 			<div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/Vishal-Surgicals.jpg"></div>
 			<div class="slide"><img style="width:120px; height:110px" src="wp-content/themes/imenso/images/client-logo/Zelar-Soft.png"></div>
 
-			<div class="slide"><img src="wp-content/themes/imenso/images/client-logo/LeoandMike.png"></div>
+			<!-- <div class="slide"><img style="width:160px" src="wp-content/themes/imenso/images/client-logo/LeoandMike.png"></div> -->
 
    </section>
 
@@ -1881,10 +1885,16 @@ Every business is different. Our focus is on understanding individual business n
   background: #007bb5;
   color: white;
 }
+#social-share .fa-instagram {
+  background: #125688;
+  color: white;
+}
         </style>
         <p id="social-share"><a href="https://www.facebook.com/pennyworthconsultants" class="fa fa-facebook"></a>
           <a href="https://www.linkedin.com/company/pennyworthconsultant" class="fa fa-linkedin"></a>
-          <a href="https://twitter.com/PennyWorthLLP" class="fa fa-twitter"></a></p>
+          <a href="https://twitter.com/PennyWorthLLP" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com/pennyworthconsultants" class="fa fa-instagram"></a>
+        </p>
 
 			</div>
 
